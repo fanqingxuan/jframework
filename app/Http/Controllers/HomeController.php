@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controller;
+use App\Models\Post;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,7 @@ class HomeController extends Controller {
     }
 
     public function list(Request $request) {
-        return response($request->all());
+        return response(Post::all());
     }
 
 }

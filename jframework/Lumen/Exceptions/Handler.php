@@ -186,7 +186,6 @@ class Handler implements ExceptionHandler
     protected function renderExceptionWithSymfony(Throwable $e, $debug)
     {
         $renderer = new HtmlErrorRenderer($debug);
-
         return $renderer->render($e)->getAsString();
     }
 

@@ -13,7 +13,10 @@
         "illuminate/config": "^8.77",
         "illuminate/database": "^8.77",
         "illuminate/events": "^8.77",
-        "illuminate/log": "^8.77"
+        "illuminate/log": "^8.77",
+        "illuminate/pagination": "^8.77",
+        "kint-php/kint": "^4.1",
+        "symfony/error-handler": "^5.4"
     },
     "autoload": {
         "psr-4": {

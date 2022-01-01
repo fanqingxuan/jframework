@@ -2,13 +2,11 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Facades\DB;
+
 class UserService {
 
     public function listUsers() {
-        return [
-            11,
-            22,
-            33
-        ];
+        return DB::select("SELECT * FROM post");
     }
 }
