@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Middleware\ExampleMiddleware;
-
 require_once __DIR__.'/../vendor/autoload.php';
 
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
@@ -78,9 +76,9 @@ $app->configure('app');
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
-$app->routeMiddleware([
-    'test' => ExampleMiddleware::class,
-]);
+// $app->routeMiddleware([
+//     'auth' => App\Http\Middleware\Authenticate::class,
+// ]);
 
 /*
 |--------------------------------------------------------------------------
@@ -109,7 +107,7 @@ $app->routeMiddleware([
 */
 
 $app->router->group([
-    'namespace' => 'App\Http\Controllers',
+    'namespace' => 'App\Controllers',
 ], function ($router) {
     require __DIR__.'/../routes/web.php';
 });

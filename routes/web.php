@@ -2,9 +2,6 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
-use App\Http\Middleware\ExampleMiddleware;
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -20,9 +17,5 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-
-$router->get('/index','HomeController@index');
-$router->get('/home',['middleware'=>'test',function(Request $request) {
-    return response($request->all());
-}]);
-$router->get('/list',['middleware'=>'test','uses'=>'HomeController@list']);
+$router->get("/home","HomeController@index");
+$router->get("/list","HomeController@list");

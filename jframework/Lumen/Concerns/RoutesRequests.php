@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Laravel\Lumen\Http\Request as LumenRequest;
 use Laravel\Lumen\Routing\Closure as RoutingClosure;
 use Laravel\Lumen\Routing\Controller as LumenController;
 use Laravel\Lumen\Routing\Pipeline;
@@ -186,7 +187,7 @@ trait RoutesRequests
     protected function parseIncomingRequest($request)
     {
         if (! $request) {
-            $request = Request::capture();
+            $request = LumenRequest::capture();
         }
 
         $this->instance(Request::class, $this->prepareRequest($request));

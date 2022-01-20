@@ -56,6 +56,7 @@ class Router
         if (isset($attributes['middleware']) && is_string($attributes['middleware'])) {
             $attributes['middleware'] = explode('|', $attributes['middleware']);
         }
+
         $this->updateGroupStack($attributes);
 
         $callback($this);
@@ -215,6 +216,7 @@ class Router
         if (isset($action['middleware']) && is_string($action['middleware'])) {
             $action['middleware'] = explode('|', $action['middleware']);
         }
+
         return $action;
     }
 
