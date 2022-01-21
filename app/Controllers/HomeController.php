@@ -4,7 +4,9 @@ namespace App\Controllers;
 
 use App\Events\SampleEvent;
 use App\Services\UserService;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\URL;
 
 class HomeController extends Controller {
 
@@ -23,8 +25,14 @@ class HomeController extends Controller {
         return response()->json([11,22,33]);
     }
 
-    public function list() {
-        return response($this->userService->listUser());
+    public function list(Request $request) {
+        return response([
+            env("DB_HOST","localhost"),
+            config("database.default","test"),
+            url('test'),
+            URL::current(),
+            $request->method()
+        ]);
     }
 
     public function test_event() {

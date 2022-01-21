@@ -1,19 +1,10 @@
 <?php
 
 namespace Laravel\Lumen;
-
-use Illuminate\Auth\AuthManager;
-use Illuminate\Auth\AuthServiceProvider;
-use Illuminate\Broadcasting\BroadcastServiceProvider;
-use Illuminate\Bus\BusServiceProvider;
 use Illuminate\Cache\CacheServiceProvider;
 use Illuminate\Config\Repository as ConfigRepository;
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Auth\Access\Gate;
-use Illuminate\Contracts\Broadcasting\Broadcaster;
-use Illuminate\Contracts\Broadcasting\Factory;
 use Illuminate\Contracts\Bus\Dispatcher;
-use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Database\DatabaseServiceProvider;
 use Illuminate\Database\MigrationServiceProvider;
 use Illuminate\Encryption\EncryptionServiceProvider;
@@ -23,7 +14,6 @@ use Illuminate\Filesystem\FilesystemServiceProvider;
 use Illuminate\Hashing\HashServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Log\LogManager;
-use Illuminate\Pagination\PaginationServiceProvider;
 use Illuminate\Queue\QueueServiceProvider;
 use Illuminate\Support\Composer;
 use Illuminate\Support\Facades\Facade;
@@ -34,19 +24,15 @@ use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\View\ViewServiceProvider;
 use Laravel\Lumen\Console\ConsoleServiceProvider;
 use Laravel\Lumen\Routing\Router;
-use Nyholm\Psr7\Factory\Psr17Factory;
-use Nyholm\Psr7\Response as PsrResponse;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
+use Laravel\Lumen\Routing\UrlGenerator;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 class Application extends Container
 {
     use Concerns\RoutesRequests,
-        Concerns\RegistersExceptionHandlers;
+    Concerns\RegistersExceptionHandlers;
 
     /**
      * Indicates if the class aliases have been registered.
@@ -300,45 +286,8 @@ class Application extends Container
         return parent::make($abstract, $parameters);
     }
 
-    /**
-     * Register container bindings for the application.
-     *
-     * @return void
-     */
-    protected function registerAuthBindings()
-    {
-        $this->singleton('auth', function () {
-            return $this->loadComponent('auth', AuthServiceProvider::class, 'auth');
-        });
+    
 
-        $this->singleton('auth.driver', function () {
-            return $this->loadComponent('auth', AuthServiceProvider::class, 'auth.driver');
-        });
-
-        $this->singleton(AuthManager::class, function () {
-            return $this->loadComponent('auth', AuthServiceProvider::class, 'auth');
-        });
-
-        $this->singleton(Gate::class, function () {
-            return $this->loadComponent('auth', AuthServiceProvider::class, Gate::class);
-        });
-    }
-
-    /**
-     * Register container bindings for the application.
-     *
-     * @return void
-     */
-    protected function registerBroadcastingBindings()
-    {
-        $this->singleton(Factory::class, function () {
-            return $this->loadComponent('broadcasting', BroadcastServiceProvider::class, Factory::class);
-        });
-
-        $this->singleton(Broadcaster::class, function () {
-            return $this->loadComponent('broadcasting', BroadcastServiceProvider::class, Broadcaster::class);
-        });
-    }
 
     /**
      * Register container bindings for the application.
@@ -544,41 +493,6 @@ class Application extends Container
     }
 
     /**
-     * Register container bindings for the PSR-7 request implementation.
-     *
-     * @return void
-     */
-    protected function registerPsrRequestBindings()
-    {
-        $this->singleton(ServerRequestInterface::class, function ($app) {
-            if (class_exists(Psr17Factory::class) && class_exists(PsrHttpFactory::class)) {
-                $psr17Factory = new Psr17Factory;
-
-                return (new PsrHttpFactory($psr17Factory, $psr17Factory, $psr17Factory, $psr17Factory))
-                    ->createRequest($app->make('request'));
-            }
-
-            throw new BindingResolutionException('Unable to resolve PSR request. Please install symfony/psr-http-message-bridge and nyholm/psr7.');
-        });
-    }
-
-    /**
-     * Register container bindings for the PSR-7 response implementation.
-     *
-     * @return void
-     */
-    protected function registerPsrResponseBindings()
-    {
-        $this->singleton(ResponseInterface::class, function () {
-            if (class_exists(PsrResponse::class)) {
-                return new PsrResponse;
-            }
-
-            throw new BindingResolutionException('Unable to resolve PSR response. Please install nyholm/psr7.');
-        });
-    }
-
-    /**
      * Register container bindings for the application.
      *
      * @return void
@@ -618,7 +532,7 @@ class Application extends Container
     protected function registerUrlGeneratorBindings()
     {
         $this->singleton('url', function () {
-            return new Routing\UrlGenerator($this);
+            return new UrlGenerator($this);
         });
     }
 
@@ -1047,13 +961,7 @@ class Application extends Container
      * @var array
      */
     public $availableBindings = [
-        // 'auth' => 'registerAuthBindings',
-        // 'auth.driver' => 'registerAuthBindings',
-        // \Illuminate\Auth\AuthManager::class => 'registerAuthBindings',
-        // \Illuminate\Contracts\Auth\Guard::class => 'registerAuthBindings',
-        // \Illuminate\Contracts\Auth\Access\Gate::class => 'registerAuthBindings',
-        // \Illuminate\Contracts\Broadcasting\Broadcaster::class => 'registerBroadcastingBindings',
-        // \Illuminate\Contracts\Broadcasting\Factory::class => 'registerBroadcastingBindings',
+       
         // \Illuminate\Contracts\Bus\Dispatcher::class => 'registerBusBindings',
         // 'cache' => 'registerCacheBindings',
         // 'cache.store' => 'registerCacheBindings',
@@ -1083,10 +991,8 @@ class Application extends Container
         // \Illuminate\Contracts\Queue\Factory::class => 'registerQueueBindings',
         // \Illuminate\Contracts\Queue\Queue::class => 'registerQueueBindings',
         // 'router' => 'registerRouterBindings',
-        // \Psr\Http\Message\ServerRequestInterface::class => 'registerPsrRequestBindings',
-        // \Psr\Http\Message\ResponseInterface::class => 'registerPsrResponseBindings',
         // 'translator' => 'registerTranslationBindings',
-        // 'url' => 'registerUrlGeneratorBindings',
+        'url' => 'registerUrlGeneratorBindings',
         // 'validator' => 'registerValidatorBindings',
         // \Illuminate\Contracts\Validation\Factory::class => 'registerValidatorBindings',
         // 'view' => 'registerViewBindings',
