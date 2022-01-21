@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class UserService {
 
     public function listUser() {
-        //return dd(DB::table("post")->limit(5)->get());
+        return DB::table("post")->limit(5)->get();
         return Post::offset(2)->limit(2)->get();
     }
 }

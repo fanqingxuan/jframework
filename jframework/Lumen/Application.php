@@ -744,7 +744,7 @@ class Application extends Container
         $defaults = [
             // \Illuminate\Support\Facades\Auth::class => 'Auth',
             // \Illuminate\Support\Facades\Cache::class => 'Cache',
-            \Illuminate\Support\Facades\DB::class => 'DB',
+            // \Illuminate\Support\Facades\DB::class => 'DB',
             // \Illuminate\Support\Facades\Event::class => 'Event',
             // \Illuminate\Support\Facades\Gate::class => 'Gate',
             // \Illuminate\Support\Facades\Log::class => 'Log',
