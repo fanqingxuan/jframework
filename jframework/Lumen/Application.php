@@ -1,10 +1,9 @@
 <?php
 
 namespace Laravel\Lumen;
-use Illuminate\Cache\CacheServiceProvider;
+
 use Illuminate\Config\Repository as ConfigRepository;
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Database\DatabaseServiceProvider;
 use Illuminate\Database\MigrationServiceProvider;
 use Illuminate\Events\EventServiceProvider;
@@ -12,15 +11,12 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Log\LogManager;
-use Illuminate\Queue\QueueServiceProvider;
 use Illuminate\Support\Composer;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Illuminate\Translation\TranslationServiceProvider;
 use Illuminate\Validation\ValidationServiceProvider;
-use Illuminate\View\ViewServiceProvider;
-use Laravel\Lumen\Console\ConsoleServiceProvider;
+use JFramework\Console\ConsoleServiceProvider;
 use Laravel\Lumen\Routing\Router;
 use Laravel\Lumen\Routing\UrlGenerator;
 use Psr\Log\LoggerInterface;
@@ -29,8 +25,8 @@ use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 class Application extends Container
 {
-    use Concerns\RoutesRequests,
-    Concerns\RegistersExceptionHandlers;
+    use Concerns\RoutesRequests;
+    use Concerns\RegistersExceptionHandlers;
 
     /**
      * Indicates if the class aliases have been registered.
@@ -103,11 +99,43 @@ class Application extends Container
      */
     public function __construct($basePath = null)
     {
-        $this->basePath = $basePath;
+        if ($basePath) {
+            $this->setBasePath($basePath);
+        }
 
         $this->bootstrapContainer();
         $this->registerErrorHandling();
         $this->bootstrapRouter();
+    }
+
+    /**
+     * Set the base path for the application.
+     *
+     * @param  string  $basePath
+     * @return $this
+     */
+    public function setBasePath($basePath)
+    {
+        $this->basePath = rtrim($basePath, '\/');
+
+        $this->bindPathsInContainer();
+
+        return $this;
+    }
+
+    /**
+     * Bind all of the application paths in the container.
+     *
+     * @return void
+     */
+    protected function bindPathsInContainer()
+    {
+        $this->instance('path', $this->path());
+        $this->instance('path.base', $this->basePath());
+        $this->instance('path.config', $this->configPath());
+        $this->instance('path.public', $this->publicPath());
+        $this->instance('path.storage', $this->storagePath());
+        $this->instance('path.database', $this->databasePath());
     }
 
     /**
@@ -289,10 +317,22 @@ class Application extends Container
      *
      * @return void
      */
+    protected function registerComposerBindings()
+    {
+        $this->singleton('composer', function ($app) {
+            return new Composer($app->make('files'), $this->basePath());
+        });
+    }
+
+    /**
+     * Register container bindings for the application.
+     *
+     * @return void
+     */
     protected function registerConfigBindings()
     {
         $this->singleton('config', function () {
-            return new ConfigRepository;
+            return new ConfigRepository();
         });
     }
 
@@ -307,10 +347,24 @@ class Application extends Container
             $this->configure('app');
 
             return $this->loadComponent(
-                'database', [
+                'database',
+                [
                     DatabaseServiceProvider::class,
-                ], 'db'
+                ],
+                'db'
             );
+        });
+    }
+
+    /**
+     * Register container bindings for the application.
+     *
+     * @return void
+     */
+    protected function registerFilesBindings()
+    {
+        $this->singleton('files', function () {
+            return new Filesystem();
         });
     }
 
@@ -615,6 +669,16 @@ class Application extends Container
     }
 
     /**
+     * Get the path to the public / web directory.
+     *
+     * @return string
+     */
+    public function publicPath()
+    {
+        return $this->basePath.DIRECTORY_SEPARATOR.'public';
+    }
+
+    /**
      * Get the storage path for the application.
      *
      * @param  string|null  $path
@@ -690,9 +754,6 @@ class Application extends Container
     public function prepareForConsoleCommand($aliases = true)
     {
         $this->withFacades($aliases);
-
-        $this->make('cache');
-        $this->make('queue');
 
         $this->configure('database');
 
@@ -803,6 +864,8 @@ class Application extends Container
      * @var array
      */
     public $availableBindings = [
+        'composer' => 'registerComposerBindings',
+
         'config' => 'registerConfigBindings',
         'db' => 'registerDatabaseBindings',
         \Illuminate\Database\Eloquent\Factory::class => 'registerDatabaseBindings',
@@ -813,6 +876,8 @@ class Application extends Container
         \Illuminate\Contracts\Filesystem\Cloud::class => 'registerFilesystemBindings',
         \Illuminate\Contracts\Filesystem\Filesystem::class => 'registerFilesystemBindings',
         \Illuminate\Contracts\Filesystem\Factory::class => 'registerFilesystemBindings',
+
+        'files' => 'registerFilesBindings',
 
         'events' => 'registerEventBindings',
         \Illuminate\Contracts\Events\Dispatcher::class => 'registerEventBindings',

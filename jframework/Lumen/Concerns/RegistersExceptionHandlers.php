@@ -102,8 +102,11 @@ trait RegistersExceptionHandlers
         $this->ensureDeprecationLoggerIsConfigured();
 
         with($logger->channel('deprecations'), function ($log) use ($message, $file, $line) {
-            $log->warning(sprintf('%s in %s on line %s',
-                $message, $file, $line
+            $log->warning(sprintf(
+                '%s in %s on line %s',
+                $message,
+                $file,
+                $line
             ));
         });
     }
@@ -200,7 +203,7 @@ trait RegistersExceptionHandlers
         $handler->report($e);
 
         if ($this->runningInConsole()) {
-            $handler->renderForConsole(new ConsoleOutput, $e);
+            $handler->renderForConsole(new ConsoleOutput(), $e);
         } else {
             $handler->render($this->make('request'), $e)->send();
         }

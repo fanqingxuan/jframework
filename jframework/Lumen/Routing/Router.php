@@ -246,7 +246,8 @@ class Router
         return $this->mergeNamespaceGroup(
             $this->mergeMiddlewareGroup(
                 $this->mergeAsGroup($action, $as),
-                $middleware),
+                $middleware
+            ),
             $namespace
         );
     }

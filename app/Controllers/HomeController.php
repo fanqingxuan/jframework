@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Events\HelloEvent;
 use App\Events\SampleEvent;
+use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
@@ -56,8 +58,8 @@ class HomeController extends Controller
         Log::error("这是error");
         Storage::disk("local")->put("file.txt", "this is contents");
         p(Storage::disk("local")->exists("file.txt"));
-        p(File::isFile("file.txt"));
-        return Storage::url("a.txt");
+        HelloEvent::dispatch();
+        return User::all();
     }
 
     public function test_redis()

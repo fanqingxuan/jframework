@@ -230,7 +230,7 @@ trait RoutesRequests
     {
         switch ($routeInfo[0]) {
             case Dispatcher::NOT_FOUND:
-                throw new NotFoundHttpException;
+                throw new NotFoundHttpException();
             case Dispatcher::METHOD_NOT_ALLOWED:
                 throw new MethodNotAllowedHttpException($routeInfo[1]);
             case Dispatcher::FOUND:
@@ -284,7 +284,7 @@ trait RoutesRequests
 
         foreach ($action as $value) {
             if ($value instanceof Closure) {
-                $callable = $value->bindTo(new RoutingClosure);
+                $callable = $value->bindTo(new RoutingClosure());
                 break;
             }
 
@@ -322,14 +322,15 @@ trait RoutesRequests
         [$controller, $method] = explode('@', $uses);
 
         if (! method_exists($instance = $this->make($controller), $method)) {
-            throw new NotFoundHttpException;
+            throw new NotFoundHttpException();
         }
 
         if ($instance instanceof LumenController) {
             return $this->callLumenController($instance, $method, $routeInfo);
         } else {
             return $this->callControllerCallable(
-                [$instance, $method], $routeInfo[2]
+                [$instance, $method],
+                $routeInfo[2]
             );
         }
     }
@@ -348,11 +349,15 @@ trait RoutesRequests
 
         if (count($middleware) > 0) {
             return $this->callLumenControllerWithMiddleware(
-                $instance, $method, $routeInfo, $middleware
+                $instance,
+                $method,
+                $routeInfo,
+                $middleware
             );
         } else {
             return $this->callControllerCallable(
-                [$instance, $method], $routeInfo[2]
+                [$instance, $method],
+                $routeInfo[2]
             );
         }
     }
@@ -444,7 +449,7 @@ trait RoutesRequests
         }
 
         if ($response instanceof PsrResponseInterface) {
-            $response = (new HttpFoundationFactory)->createResponse($response);
+            $response = (new HttpFoundationFactory())->createResponse($response);
         } elseif (! $response instanceof SymfonyResponse) {
             $response = new Response($response);
         } elseif ($response instanceof BinaryFileResponse) {

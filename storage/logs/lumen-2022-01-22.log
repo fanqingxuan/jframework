@@ -372,3 +372,1354 @@
 #21 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #22 {main}
 "} 
+[2022-01-22 12:40:15] local.ERROR: Target class [App\Console\Kernel] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Console\\Kernel] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#5 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#6 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#7 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class App\\Console\\Kernel does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('App\\\\Console\\\\Ker...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#6 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#7 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#8 {main}
+"} 
+[2022-01-22 12:45:50] local.ERROR: Class 'Laravel\Lumen\Console\Kernel' not found {"exception":"[object] (Error(code: 0): Class 'Laravel\\Lumen\\Console\\Kernel' not found at E:\\php\\jframework\\app\\Console\\Kernel.php:8)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(480): include()
+#1 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('E:\\\\php\\\\jframewo...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Ker...')
+#3 [internal function]: spl_autoload_call('App\\\\Console\\\\Ker...')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('App\\\\Console\\\\Ker...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#11 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#12 {main}
+"} 
+[2022-01-22 12:46:26] local.ERROR: Class 'Illuminate\Console\Application' not found {"exception":"[object] (Error(code: 0): Class 'Illuminate\\Console\\Application' not found at E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php:403)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\MigrationServiceProvider.php(109): Illuminate\\Support\\ServiceProvider->commands(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\MigrationServiceProvider.php(51): Illuminate\\Database\\MigrationServiceProvider->registerCommands(Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(217): Illuminate\\Database\\MigrationServiceProvider->register()
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(699): Laravel\\Lumen\\Application->register(Object(Illuminate\\Database\\MigrationServiceProvider))
+#4 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(60): Laravel\\Lumen\\Application->prepareForConsoleCommand(true)
+#5 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#13 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#14 {main}
+"} 
+[2022-01-22 12:47:04] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(98): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(61): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 12:53:20] local.ERROR: Call to undefined method Laravel\Lumen\Console\ConsoleServiceProvider::registerSeedCommand() {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Console\\ConsoleServiceProvider::registerSeedCommand() at E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php:69)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php(56): Laravel\\Lumen\\Console\\ConsoleServiceProvider->registerCommands(Array)
+#1 E:\\php\\jframework\\jframework\\Lumen\\Application.php(217): Laravel\\Lumen\\Console\\ConsoleServiceProvider->register()
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(700): Laravel\\Lumen\\Application->register(Object(Laravel\\Lumen\\Console\\ConsoleServiceProvider))
+#3 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(60): Laravel\\Lumen\\Application->prepareForConsoleCommand(true)
+#4 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#12 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#13 {main}
+"} 
+[2022-01-22 12:53:44] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(98): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(61): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 12:56:25] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(98): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(61): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 13:05:10] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(97): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(60): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 13:05:24] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(97): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(60): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 13:06:10] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(97): Illuminate\\Console\\Scheduling\\Schedule->__construct()
+#12 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(60): Laravel\\Lumen\\Console\\Kernel->defineConsoleSchedule()
+#13 [internal function]: Laravel\\Lumen\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#21 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#22 {main}
+"} 
+[2022-01-22 13:08:36] local.ERROR: Declaration of App\Console\Kernel::schedule(Illuminate\Console\Scheduling\Schedule $schedule) should be compatible with Laravel\Lumen\Console\Kernel::schedule(Laravel\Lumen\Console\Schedule $schedule) {"exception":"[object] (ErrorException(code: 0): Declaration of App\\Console\\Kernel::schedule(Illuminate\\Console\\Scheduling\\Schedule $schedule) should be compatible with Laravel\\Lumen\\Console\\Kernel::schedule(Laravel\\Lumen\\Console\\Schedule $schedule) at E:\\php\\jframework\\app\\Console\\Kernel.php:8)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RegistersExceptionHandlers.php(47): Laravel\\Lumen\\Application->handleError(2, 'Declaration of ...', 'E:\\\\php\\\\jframewo...', 8)
+#1 E:\\php\\jframework\\app\\Console\\Kernel.php(8): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'Declaration of ...', 'E:\\\\php\\\\jframewo...', 8, Array)
+#2 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(480): include('E:\\\\php\\\\jframewo...')
+#3 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('E:\\\\php\\\\jframewo...')
+#4 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Ker...')
+#5 [internal function]: spl_autoload_call('App\\\\Console\\\\Ker...')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('App\\\\Console\\\\Ker...')
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#13 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#14 {main}
+"} 
+[2022-01-22 13:09:12] local.ERROR: Target class [files] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [files] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('files')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('files', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('files', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('files')
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\MigrationServiceProvider.php(81): Illuminate\\Container\\Container->offsetGet('files')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Database\\MigrationServiceProvider->Illuminate\\Database\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('migrator', Array)
+#8 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('migrator', Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('migrator')
+#10 E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php(82): Illuminate\\Container\\Container->offsetGet('migrator')
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Laravel\\Lumen\\Console\\ConsoleServiceProvider->Laravel\\Lumen\\Console\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('command.migrate', Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('command.migrate', Array)
+#15 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(262): Laravel\\Lumen\\Application->make('command.migrate')
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(276): Illuminate\\Console\\Application->resolve('command.migrate')
+#17 E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands(Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}(Object(Illuminate\\Console\\Application))
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#20 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(195): Illuminate\\Console\\Application->__construct(Object(Laravel\\Lumen\\Application), Object(Illuminate\\Events\\Dispatcher), 'Lumen (8.3.4) (...')
+#21 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Laravel\\Lumen\\Console\\Kernel->getArtisan()
+#22 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class files does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('files')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('files')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('files', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('files', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('files')
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\MigrationServiceProvider.php(81): Illuminate\\Container\\Container->offsetGet('files')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Database\\MigrationServiceProvider->Illuminate\\Database\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('migrator', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('migrator', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('migrator')
+#11 E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php(82): Illuminate\\Container\\Container->offsetGet('migrator')
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Laravel\\Lumen\\Console\\ConsoleServiceProvider->Laravel\\Lumen\\Console\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('command.migrate', Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('command.migrate', Array)
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(262): Laravel\\Lumen\\Application->make('command.migrate')
+#17 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(276): Illuminate\\Console\\Application->resolve('command.migrate')
+#18 E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands(Array)
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}(Object(Illuminate\\Console\\Application))
+#20 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#21 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(195): Illuminate\\Console\\Application->__construct(Object(Laravel\\Lumen\\Application), Object(Illuminate\\Events\\Dispatcher), 'Lumen (8.3.4) (...')
+#22 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Laravel\\Lumen\\Console\\Kernel->getArtisan()
+#23 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 {main}
+"} 
+[2022-01-22 13:10:31] local.ERROR: Target class [composer] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [composer] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('composer')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('composer', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('composer', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('composer')
+#4 E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php(111): Illuminate\\Container\\Container->offsetGet('composer')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Laravel\\Lumen\\Console\\ConsoleServiceProvider->Laravel\\Lumen\\Console\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('command.migrate...', Array)
+#8 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('command.migrate...', Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(262): Laravel\\Lumen\\Application->make('command.migrate...')
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(276): Illuminate\\Console\\Application->resolve('command.migrate...')
+#11 E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands(Array)
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}(Object(Illuminate\\Console\\Application))
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#14 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(195): Illuminate\\Console\\Application->__construct(Object(Laravel\\Lumen\\Application), Object(Illuminate\\Events\\Dispatcher), 'Lumen (8.3.4) (...')
+#15 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Laravel\\Lumen\\Console\\Kernel->getArtisan()
+#16 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class composer does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('composer')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('composer')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('composer', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('composer', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('composer')
+#5 E:\\php\\jframework\\jframework\\Lumen\\Console\\ConsoleServiceProvider.php(111): Illuminate\\Container\\Container->offsetGet('composer')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Laravel\\Lumen\\Console\\ConsoleServiceProvider->Laravel\\Lumen\\Console\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('command.migrate...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('command.migrate...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(262): Laravel\\Lumen\\Application->make('command.migrate...')
+#11 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(276): Illuminate\\Console\\Application->resolve('command.migrate...')
+#12 E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands(Array)
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}(Object(Illuminate\\Console\\Application))
+#14 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#15 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(195): Illuminate\\Console\\Application->__construct(Object(Laravel\\Lumen\\Application), Object(Illuminate\\Events\\Dispatcher), 'Lumen (8.3.4) (...')
+#16 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Laravel\\Lumen\\Console\\Kernel->getArtisan()
+#17 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
+[2022-01-22 13:11:48] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 [internal function]: Illuminate\\Console\\Scheduling\\Schedule->__construct(NULL)
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(182): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(124): Illuminate\\Container\\BoundMethod::addDependencyForCallParameter(Object(Laravel\\Lumen\\Application), Object(ReflectionParameter), Array, Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Container\\BoundMethod::getMethodDependencies(Object(Laravel\\Lumen\\Application), Array, Array)
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#22 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#23 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#24 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Console\\Scheduling\\ScheduleRunCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2022-01-22 13:12:27] local.ERROR: Target [Illuminate\Contracts\Cache\Factory] is not instantiable while building [Illuminate\Console\Scheduling\CacheEventMutex]. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target [Illuminate\\Contracts\\Cache\\Factory] is not instantiable while building [Illuminate\\Console\\Scheduling\\CacheEventMutex]. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:1093)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(912): Illuminate\\Container\\Container->resolveDependencies(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Scheduling\\Schedule.php(90): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#11 [internal function]: Illuminate\\Console\\Scheduling\\Schedule->__construct(NULL)
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cons...')
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cons...', Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cons...', Array)
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(182): Laravel\\Lumen\\Application->make('Illuminate\\\\Cons...')
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(124): Illuminate\\Container\\BoundMethod::addDependencyForCallParameter(Object(Laravel\\Lumen\\Application), Object(ReflectionParameter), Array, Array)
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Container\\BoundMethod::getMethodDependencies(Object(Laravel\\Lumen\\Application), Array, Array)
+#19 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#22 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#23 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#24 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Console\\Scheduling\\ScheduleRunCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(100): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2022-01-22 13:14:25] local.ERROR: There are no commands defined in the "schedule" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"schedule\" namespace. at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:639)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(690): Symfony\\Component\\Console\\Application->findNamespace('schedule')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('schedule:run')
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2022-01-22 13:14:29] local.ERROR: There are no commands defined in the "schedule" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"schedule\" namespace. at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:639)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(690): Symfony\\Component\\Console\\Application->findNamespace('schedule')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('schedule:run')
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2022-01-22 13:17:07] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' (SQL: select `migration` from `migrations` order by `batch` asc, `migration` asc) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' (SQL: select `migration` from `migrations` order by `batch` asc, `migration` asc) at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:712)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select `migrati...', Array, Object(Closure))
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select `migrati...', Array, Object(Closure))
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select `migrati...', Array, false)
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2597): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2599): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(53): Illuminate\\Database\\Query\\Builder->pluck('migration')
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\Migrator.php(662): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getRan()
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(112): Illuminate\\Database\\Migrations\\Migrator->hasRunAnyMigrations()
+#9 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#10 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#17 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#18 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:368)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(368): PDO->prepare('select `migrati...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select `migrati...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select `migrati...', Array, Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select `migrati...', Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select `migrati...', Array, false)
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2597): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2599): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(53): Illuminate\\Database\\Query\\Builder->pluck('migration')
+#9 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\Migrator.php(662): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getRan()
+#10 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(112): Illuminate\\Database\\Migrations\\Migrator->hasRunAnyMigrations()
+#11 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#12 E:\\php\\jframework\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#13 E:\\php\\jframework\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#18 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#20 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+"} 
+[2022-01-22 13:22:49] local.ERROR: Class 'JFramework\Console\Kernel' not found {"exception":"[object] (Error(code: 0): Class 'JFramework\\Console\\Kernel' not found at E:\\php\\jframework\\app\\Console\\Kernel.php:7)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(480): include()
+#1 E:\\php\\jframework\\vendor\\composer\\ClassLoader.php(346): Composer\\Autoload\\includeFile('E:\\\\php\\\\jframewo...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Ker...')
+#3 [internal function]: spl_autoload_call('App\\\\Console\\\\Ker...')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('App\\\\Console\\\\Ker...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#11 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#12 {main}
+"} 
+[2022-01-22 13:23:21] local.ERROR: Class 'Laravel\Lumen\Console\ConsoleServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Laravel\\Lumen\\Console\\ConsoleServiceProvider' not found at E:\\php\\jframework\\jframework\\Lumen\\Application.php:207)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Application.php(724): Laravel\\Lumen\\Application->register('Laravel\\\\Lumen\\\\C...')
+#1 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(58): Laravel\\Lumen\\Application->prepareForConsoleCommand(true)
+#2 [internal function]: JFramework\\Console\\Kernel->__construct(Object(Laravel\\Lumen\\Application))
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#10 E:\\php\\jframework\\artisan(32): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
+#11 {main}
+"} 
+[2022-01-22 14:00:33] local.ERROR: No arguments expected for "event:generate" command, got "test". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"event:generate\" command, got \"test\". at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php:193)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('test')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('test', true)
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(257): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2022-01-22 14:00:53] local.ERROR: Call to undefined method Laravel\Lumen\Application::getProviders() {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Application::getProviders() at E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventGenerateCommand.php:32)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventGenerateCommand->handle()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#6 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2022-01-22 14:03:35] local.ERROR: Call to undefined method Laravel\Lumen\Application::getProviders() {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Application::getProviders() at E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php:50)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(32): JFramework\\Console\\Commands\\EventListCommand->getEvents()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventListCommand->handle()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#7 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-01-22 14:06:09] local.ERROR: Class 'Laravel\Lumen\Arr' not found {"exception":"[object] (Error(code: 0): Class 'Laravel\\Lumen\\Arr' not found at E:\\php\\jframework\\jframework\\Lumen\\Application.php:829)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(50): Laravel\\Lumen\\Application->getProviders('JFramework\\\\Supp...')
+#1 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(32): JFramework\\Console\\Commands\\EventListCommand->getEvents()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventListCommand->handle()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-01-22 14:06:22] local.ERROR: Target class [serviceProviders] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [serviceProviders] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('serviceProvider...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('serviceProvider...', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(280): Illuminate\\Container\\Container->make('serviceProvider...', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('serviceProvider...')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1461): Illuminate\\Container\\Container->offsetGet('serviceProvider...')
+#5 E:\\php\\jframework\\jframework\\Lumen\\Application.php(830): Illuminate\\Container\\Container->__get('serviceProvider...')
+#6 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(50): Laravel\\Lumen\\Application->getProviders('JFramework\\\\Supp...')
+#7 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(32): JFramework\\Console\\Commands\\EventListCommand->getEvents()
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventListCommand->handle()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class serviceProviders does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('serviceProvider...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('serviceProvider...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('serviceProvider...', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(280): Illuminate\\Container\\Container->make('serviceProvider...', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('serviceProvider...')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1461): Illuminate\\Container\\Container->offsetGet('serviceProvider...')
+#6 E:\\php\\jframework\\jframework\\Lumen\\Application.php(830): Illuminate\\Container\\Container->__get('serviceProvider...')
+#7 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(50): Laravel\\Lumen\\Application->getProviders('JFramework\\\\Supp...')
+#8 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(32): JFramework\\Console\\Commands\\EventListCommand->getEvents()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventListCommand->handle()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#14 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+"} 
+[2022-01-22 14:14:28] local.ERROR: Call to undefined method App\Providers\EventServiceProvider::shouldDiscoverEvents() {"exception":"[object] (Error(code: 0): Call to undefined method App\\Providers\\EventServiceProvider::shouldDiscoverEvents() at E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php:51)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php(32): JFramework\\Console\\Commands\\EventListCommand->getEvents()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\EventListCommand->handle()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#7 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-01-22 14:36:22] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-01-22 14:36:27] local.ERROR: Not enough arguments (missing: "name"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"name\"). at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(293): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ListenerMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-01-22 14:36:38] local.ERROR: File does not exist at path E:\php\jframework\jframework\JFramework\Console\Commands/stubs/listener-duck.stub. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands/stubs/listener-duck.stub. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\Filesystem.php:57)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(279): Illuminate\\Filesystem\\Filesystem->get('E:\\\\php\\\\jframewo...')
+#1 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ListenerMakeCommand.php(51): Illuminate\\Console\\GeneratorCommand->buildClass('App\\\\Listeners\\\\H...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(164): JFramework\\Console\\Commands\\ListenerMakeCommand->buildClass('App\\\\Listeners\\\\H...')
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Console\\GeneratorCommand->handle()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ListenerMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2022-01-22 14:40:17] local.INFO: 这是info  
+[2022-01-22 14:40:17] local.DEBUG: 这是debug  
+[2022-01-22 14:40:17] local.WARNING: 这是warning  
+[2022-01-22 14:40:17] local.NOTICE: 这是notice  
+[2022-01-22 14:40:17] local.ERROR: 这是error  
+[2022-01-22 14:41:21] local.ERROR: Command "make:controller" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:controller\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(148): Symfony\\Component\\Console\\Application->find('make:controller')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(67): Illuminate\\Console\\Command->resolveCommand('make:controller')
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('make:controller', Array, Object(Illuminate\\Console\\OutputStyle))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(130): Illuminate\\Console\\Command->call('make:controller', Array)
+#4 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(64): JFramework\\Console\\Commands\\ModelMakeCommand->createController()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-01-22 14:41:33] local.ERROR: The "--controller" option does not accept a value. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--controller\" option does not accept a value. at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php:235)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('controller', 'test')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--controller=te...')
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--controller=te...', true)
+#3 E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(257): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-01-22 14:41:44] local.ERROR: Command "make:controller" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:controller\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(148): Symfony\\Component\\Console\\Application->find('make:controller')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(67): Illuminate\\Console\\Command->resolveCommand('make:controller')
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('make:controller', Array, Object(Illuminate\\Console\\OutputStyle))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(130): Illuminate\\Console\\Command->call('make:controller', Array)
+#4 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(64): JFramework\\Console\\Commands\\ModelMakeCommand->createController()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-01-22 14:42:18] local.ERROR: Command "make:controller" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:controller\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(148): Symfony\\Component\\Console\\Application->find('make:controller')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(67): Illuminate\\Console\\Command->resolveCommand('make:controller')
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('make:controller', Array, Object(Illuminate\\Console\\OutputStyle))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(130): Illuminate\\Console\\Command->call('make:controller', Array)
+#4 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(64): JFramework\\Console\\Commands\\ModelMakeCommand->createController()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-01-22 14:48:41] local.ERROR: Not enough arguments (missing: "name"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"name\"). at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(293): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-01-22 14:48:56] local.ERROR: The "pivot" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\InvalidArgumentException(code: 0): The \"pivot\" option does not exist. at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php:158)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\InteractsWithIO.php(111): Symfony\\Component\\Console\\Input\\Input->getOption('pivot')
+#1 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(66): Illuminate\\Console\\Command->option('pivot')
+#2 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(49): JFramework\\Console\\Commands\\ModelMakeCommand->createMigration()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2022-01-22 14:50:03] local.INFO: 这是info  
+[2022-01-22 14:50:03] local.DEBUG: 这是debug  
+[2022-01-22 14:50:03] local.WARNING: 这是warning  
+[2022-01-22 14:50:03] local.NOTICE: 这是notice  
+[2022-01-22 14:50:03] local.ERROR: 这是error  
+[2022-01-22 14:50:03] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist (SQL: select * from `users`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist (SQL: select * from `users`) at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:712)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 E:\\php\\jframework\\app\\Controllers\\HomeController.php(62): Illuminate\\Database\\Eloquent\\Model::all()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#23 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#24 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#25 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:368)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(368): PDO->prepare('select * from `...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#11 E:\\php\\jframework\\app\\Controllers\\HomeController.php(62): Illuminate\\Database\\Eloquent\\Model::all()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#23 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#24 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#25 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#26 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#27 {main}
+"} 
+[2022-01-22 14:50:31] local.INFO: 这是info  
+[2022-01-22 14:50:31] local.DEBUG: 这是debug  
+[2022-01-22 14:50:31] local.WARNING: 这是warning  
+[2022-01-22 14:50:31] local.NOTICE: 这是notice  
+[2022-01-22 14:50:31] local.ERROR: 这是error  
+[2022-01-22 14:50:31] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.user' doesn't exist (SQL: select * from `user`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.user' doesn't exist (SQL: select * from `user`) at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:712)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 E:\\php\\jframework\\app\\Controllers\\HomeController.php(62): Illuminate\\Database\\Eloquent\\Model::all()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#23 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#24 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#25 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.user' doesn't exist at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:368)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(368): PDO->prepare('select * from `...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#11 E:\\php\\jframework\\app\\Controllers\\HomeController.php(62): Illuminate\\Database\\Eloquent\\Model::all()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#23 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#24 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#25 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#26 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#27 {main}
+"} 
+[2022-01-22 14:51:36] local.INFO: 这是info  
+[2022-01-22 14:51:36] local.DEBUG: 这是debug  
+[2022-01-22 14:51:36] local.WARNING: 这是warning  
+[2022-01-22 14:51:36] local.NOTICE: 这是notice  
+[2022-01-22 14:51:36] local.ERROR: 这是error  
+[2022-01-22 14:52:04] local.INFO: 这是info  
+[2022-01-22 14:52:04] local.DEBUG: 这是debug  
+[2022-01-22 14:52:04] local.WARNING: 这是warning  
+[2022-01-22 14:52:04] local.NOTICE: 这是notice  
+[2022-01-22 14:52:04] local.ERROR: 这是error  
+[2022-01-22 14:52:29] local.ERROR: The "resource" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\InvalidArgumentException(code: 0): The \"resource\" option does not exist. at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php:158)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\InteractsWithIO.php(111): Symfony\\Component\\Console\\Input\\Input->getOption('resource')
+#1 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(85): Illuminate\\Console\\Command->option('resource')
+#2 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(53): JFramework\\Console\\Commands\\ModelMakeCommand->createController()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2022-01-22 14:52:48] local.ERROR: Command "make:controller" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:controller\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(148): Symfony\\Component\\Console\\Application->find('make:controller')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(67): Illuminate\\Console\\Command->resolveCommand('make:controller')
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('make:controller', Array, Object(Illuminate\\Console\\OutputStyle))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(84): Illuminate\\Console\\Command->call('make:controller', Array)
+#4 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\ModelMakeCommand.php(53): JFramework\\Console\\Commands\\ModelMakeCommand->createController()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\ModelMakeCommand->handle()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-01-22 14:55:58] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider
+    make:service {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider
+    make:service at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-01-22 14:56:03] local.ERROR: Not enough arguments (missing: "name"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"name\"). at E:\\php\\jframework\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(293): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ServiceMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-01-22 14:56:12] local.ERROR: File does not exist at path E:\php\jframework\jframework\JFramework\Console\Commands/stubs/service.stub. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands/stubs/service.stub. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\Filesystem.php:57)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(279): Illuminate\\Filesystem\\Filesystem->get('E:\\\\php\\\\jframewo...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(164): Illuminate\\Console\\GeneratorCommand->buildClass('App\\\\Services\\\\Po...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Console\\GeneratorCommand->handle()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ServiceMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-01-22 14:59:03] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider
+    make:service {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:command
+    make:event
+    make:listener
+    make:migration
+    make:model
+    make:provider
+    make:service at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('make')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-01-22 14:59:23] local.ERROR: File does not exist at path E:\php\jframework\jframework\JFramework\Console\Commands/stubs/provider.stub. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands/stubs/provider.stub. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\Filesystem.php:57)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(279): Illuminate\\Filesystem\\Filesystem->get('E:\\\\php\\\\jframewo...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\console\\GeneratorCommand.php(164): Illuminate\\Console\\GeneratorCommand->buildClass('App\\\\Providers\\\\H...')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): Illuminate\\Console\\GeneratorCommand->handle()
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\ProviderMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-01-22 15:01:29] local.ERROR: Call to undefined function JFramework\Console\Commands\public_path() {"exception":"[object] (Error(code: 0): Call to undefined function JFramework\\Console\\Commands\\public_path() at E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\StorageLinkCommand.php:30)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\StorageLinkCommand->handle()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#6 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\StorageLinkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2022-01-22 15:02:58] local.ERROR: Target class [path.public] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [path.public] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('path.public')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('path.public', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(279): Illuminate\\Container\\Container->make('path.public', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\helpers.php(333): Laravel\\Lumen\\Application->make('path.public')
+#4 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\StorageLinkCommand.php(30): public_path('storage')
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\StorageLinkCommand->handle()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#11 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\StorageLinkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class path.public does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('path.public')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('path.public')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('path.public', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(279): Illuminate\\Container\\Container->make('path.public', Array)
+#4 E:\\php\\jframework\\jframework\\Lumen\\helpers.php(333): Laravel\\Lumen\\Application->make('path.public')
+#5 E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\StorageLinkCommand.php(30): public_path('storage')
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): JFramework\\Console\\Commands\\StorageLinkCommand->handle()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#12 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\StorageLinkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 {main}
+"} 
+[2022-01-22 15:44:45] local.ERROR: Command "hello" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"hello\" is not defined. at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('hello')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(104): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-01-22 15:45:59] local.ERROR: Command "hello" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"hello\" is not defined. at E:\\php\\jframework\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('hello')
+#1 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(104): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-01-22 15:52:17] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist (SQL: select * from `users`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist (SQL: select * from `users`) at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:712)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 E:\\php\\jframework\\app\\Console\\Commands\\HelloCommand.php(41): Illuminate\\Database\\Eloquent\\Model::all()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Console\\Commands\\HelloCommand->handle()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#15 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#16 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#18 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\HelloCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(105): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.users' doesn't exist at E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php:368)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(368): PDO->prepare('select * from `...')
+#1 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2385): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2373): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2907): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\database\\Query\\Builder.php(2374): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(625): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Builder.php(609): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 E:\\php\\jframework\\vendor\\illuminate\\database\\Eloquent\\Model.php(568): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#11 E:\\php\\jframework\\app\\Console\\Commands\\HelloCommand.php(41): Illuminate\\Database\\Eloquent\\Model::all()
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Console\\Commands\\HelloCommand->handle()
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#16 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#17 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#18 E:\\php\\jframework\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\HelloCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(105): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 

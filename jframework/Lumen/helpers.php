@@ -5,7 +5,8 @@ use Illuminate\Contracts\Debug\ExceptionHandler;
 use Kint\Kint;
 use Kint\Renderer\RichRenderer;
 
-function __init_kint() {
+function __init_kint()
+{
     RichRenderer::$theme = 'aante-light.css';
 }
 
@@ -207,7 +208,7 @@ if (! function_exists('response')) {
      */
     function response($content = '', $status = 200, array $headers = [])
     {
-        $factory = new Laravel\Lumen\Http\ResponseFactory;
+        $factory = new Laravel\Lumen\Http\ResponseFactory();
 
         if (func_num_args() === 0) {
             return $factory;
@@ -284,7 +285,7 @@ if (! function_exists('validator')) {
 }
 
 if (!function_exists('p')) {
-   
+
     /**
      * Alias of Kint::dump().
      *
@@ -319,4 +320,30 @@ if (!function_exists('pp')) {
         exit(1);
     }
     Kint::$aliases[] = 'pp';
+}
+
+if (! function_exists('public_path')) {
+    /**
+     * Get the path to the public folder.
+     *
+     * @param  string  $path
+     * @return string
+     */
+    function public_path($path = '')
+    {
+        return app()->make('path.public').($path ? DIRECTORY_SEPARATOR.ltrim($path, DIRECTORY_SEPARATOR) : $path);
+    }
+}
+
+if (! function_exists('app_path')) {
+    /**
+     * Get the path to the application folder.
+     *
+     * @param  string  $path
+     * @return string
+     */
+    function app_path($path = '')
+    {
+        return app()->path($path);
+    }
 }
