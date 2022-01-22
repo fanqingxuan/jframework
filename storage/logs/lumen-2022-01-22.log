@@ -1,0 +1,811 @@
+[2022-01-22 05:15:35] local.INFO: 这是info  
+[2022-01-22 05:15:35] local.DEBUG: 这是debug  
+[2022-01-22 05:15:35] local.WARNING: 这是warning  
+[2022-01-22 05:15:35] local.NOTICE: 这是notice  
+[2022-01-22 05:15:35] local.ERROR: 这是error  
+[2022-01-22 05:15:35] local.ERROR: Target class [cache] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [cache] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('cache')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('cache', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('cache', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('cache')
+#4 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('cache')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('cache')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(50): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class cache does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('cache')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('cache')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('cache', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('cache', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('cache')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('cache')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('cache')
+#7 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#8 E:\\php\\jframework\\app\\Controllers\\HomeController.php(50): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#23 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#24 {main}
+"} 
+[2022-01-22 05:15:36] local.INFO: 这是info  
+[2022-01-22 05:15:36] local.DEBUG: 这是debug  
+[2022-01-22 05:15:36] local.WARNING: 这是warning  
+[2022-01-22 05:15:36] local.NOTICE: 这是notice  
+[2022-01-22 05:15:36] local.ERROR: 这是error  
+[2022-01-22 05:15:36] local.ERROR: Target class [cache] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [cache] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('cache')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('cache', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('cache', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('cache')
+#4 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('cache')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('cache')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(50): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class cache does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('cache')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('cache')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('cache', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('cache', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('cache')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('cache')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('cache')
+#7 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#8 E:\\php\\jframework\\app\\Controllers\\HomeController.php(50): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#23 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#24 {main}
+"} 
+[2022-01-22 05:28:03] local.INFO: 这是info  
+[2022-01-22 05:28:03] local.DEBUG: 这是debug  
+[2022-01-22 05:28:03] local.WARNING: 这是warning  
+[2022-01-22 05:28:03] local.NOTICE: 这是notice  
+[2022-01-22 05:28:03] local.ERROR: 这是error  
+[2022-01-22 05:28:03] local.ERROR: Target class [filesystem] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [filesystem] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('filesystem')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('filesystem', Array)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('filesystem', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('filesystem')
+#4 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('filesystem')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('filesystem')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(51): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class filesystem does not exist at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:877)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(877): ReflectionClass->__construct('filesystem')
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('filesystem')
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('filesystem', Array)
+#3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(285): Illuminate\\Container\\Container->make('filesystem', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1423): Laravel\\Lumen\\Application->make('filesystem')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(198): Illuminate\\Container\\Container->offsetGet('filesystem')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('filesystem')
+#7 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#8 E:\\php\\jframework\\app\\Controllers\\HomeController.php(51): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#13 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#22 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#23 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#24 {main}
+"} 
+[2022-01-22 05:28:41] local.INFO: 这是info  
+[2022-01-22 05:28:41] local.DEBUG: 这是debug  
+[2022-01-22 05:28:41] local.WARNING: 这是warning  
+[2022-01-22 05:28:41] local.NOTICE: 这是notice  
+[2022-01-22 05:28:41] local.ERROR: 这是error  
+[2022-01-22 05:28:41] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(51): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 05:47:04] local.INFO: 这是info  
+[2022-01-22 05:47:04] local.DEBUG: 这是debug  
+[2022-01-22 05:47:04] local.WARNING: 这是warning  
+[2022-01-22 05:47:04] local.NOTICE: 这是notice  
+[2022-01-22 05:47:04] local.ERROR: 这是error  
+[2022-01-22 05:47:04] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(51): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 05:49:11] local.INFO: 这是info  
+[2022-01-22 05:49:11] local.DEBUG: 这是debug  
+[2022-01-22 05:49:11] local.WARNING: 这是warning  
+[2022-01-22 05:49:11] local.NOTICE: 这是notice  
+[2022-01-22 05:49:11] local.ERROR: 这是error  
+[2022-01-22 05:49:11] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(51): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 05:49:45] local.INFO: 这是info  
+[2022-01-22 05:49:45] local.DEBUG: 这是debug  
+[2022-01-22 05:49:45] local.WARNING: 这是warning  
+[2022-01-22 05:49:45] local.NOTICE: 这是notice  
+[2022-01-22 05:49:45] local.ERROR: 这是error  
+[2022-01-22 05:49:45] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(52): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 05:50:40] local.INFO: 这是info  
+[2022-01-22 05:50:40] local.DEBUG: 这是debug  
+[2022-01-22 05:50:40] local.WARNING: 这是warning  
+[2022-01-22 05:50:40] local.NOTICE: 这是notice  
+[2022-01-22 05:50:40] local.ERROR: 这是error  
+[2022-01-22 05:50:40] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(52): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 05:53:53] local.INFO: 这是info  
+[2022-01-22 05:53:53] local.DEBUG: 这是debug  
+[2022-01-22 05:53:53] local.WARNING: 这是warning  
+[2022-01-22 05:53:53] local.NOTICE: 这是notice  
+[2022-01-22 05:53:53] local.ERROR: 这是error  
+[2022-01-22 05:53:53] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(52): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 07:29:54] local.INFO: 这是info  
+[2022-01-22 07:29:54] local.DEBUG: 这是debug  
+[2022-01-22 07:29:54] local.WARNING: 这是warning  
+[2022-01-22 07:29:54] local.NOTICE: 这是notice  
+[2022-01-22 07:29:54] local.ERROR: 这是error  
+[2022-01-22 07:29:54] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 07:30:10] local.INFO: 这是info  
+[2022-01-22 07:30:10] local.DEBUG: 这是debug  
+[2022-01-22 07:30:10] local.WARNING: 这是warning  
+[2022-01-22 07:30:10] local.NOTICE: 这是notice  
+[2022-01-22 07:30:10] local.ERROR: 这是error  
+[2022-01-22 07:30:10] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 07:46:45] local.INFO: 这是info  
+[2022-01-22 07:46:45] local.DEBUG: 这是debug  
+[2022-01-22 07:46:45] local.WARNING: 这是warning  
+[2022-01-22 07:46:45] local.NOTICE: 这是notice  
+[2022-01-22 07:46:45] local.ERROR: 这是error  
+[2022-01-22 07:46:45] local.ERROR: Disk [local] does not have a configured driver. {"exception":"[object] (InvalidArgumentException(code: 0): Disk [local] does not have a configured driver. at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:132)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 07:53:11] local.ERROR: file_get_contents(aante-light): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(aante-light): failed to open stream: No such file or directory at E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php:626)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RegistersExceptionHandlers.php(47): Laravel\\Lumen\\Application->handleError(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626)
+#1 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626, Array)
+#2 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(626): file_get_contents('aante-light')
+#3 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(386): Kint\\Renderer\\RichRenderer->renderCss(Object(Kint\\Renderer\\RichRenderer))
+#4 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(257): Kint\\Renderer\\RichRenderer->preRender()
+#5 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(590): Kint\\Kint->dumpAll(Array, Array)
+#6 E:\\php\\jframework\\jframework\\helpers.php(38): Kint\\Kint::dump(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(46): pp(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+"} 
+[2022-01-22 07:54:08] local.ERROR: file_get_contents(microtime.css): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(microtime.css): failed to open stream: No such file or directory at E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php:626)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RegistersExceptionHandlers.php(47): Laravel\\Lumen\\Application->handleError(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626)
+#1 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626, Array)
+#2 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(626): file_get_contents('microtime.css')
+#3 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(386): Kint\\Renderer\\RichRenderer->renderCss(Object(Kint\\Renderer\\RichRenderer))
+#4 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(257): Kint\\Renderer\\RichRenderer->preRender()
+#5 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(590): Kint\\Kint->dumpAll(Array, Array)
+#6 E:\\php\\jframework\\jframework\\helpers.php(38): Kint\\Kint::dump(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(46): pp(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+"} 
+[2022-01-22 07:54:51] local.ERROR: file_get_contents(dark.css): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(dark.css): failed to open stream: No such file or directory at E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php:626)
+[stacktrace]
+#0 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RegistersExceptionHandlers.php(47): Laravel\\Lumen\\Application->handleError(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626)
+#1 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'file_get_conten...', 'E:\\\\php\\\\jframewo...', 626, Array)
+#2 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(626): file_get_contents('dark.css')
+#3 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Renderer\\RichRenderer.php(386): Kint\\Renderer\\RichRenderer->renderCss(Object(Kint\\Renderer\\RichRenderer))
+#4 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(257): Kint\\Renderer\\RichRenderer->preRender()
+#5 E:\\php\\jframework\\vendor\\kint-php\\kint\\src\\Kint.php(590): Kint\\Kint->dumpAll(Array, Array)
+#6 E:\\php\\jframework\\jframework\\helpers.php(38): Kint\\Kint::dump(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#7 E:\\php\\jframework\\app\\Controllers\\HomeController.php(46): pp(Object(Illuminate\\Support\\Collection), Object(App\\Controllers\\HomeController))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#21 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#22 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#23 {main}
+"} 
+[2022-01-22 08:16:01] local.INFO: 这是info  
+[2022-01-22 08:16:01] local.DEBUG: 这是debug  
+[2022-01-22 08:16:01] local.WARNING: 这是warning  
+[2022-01-22 08:16:01] local.NOTICE: 这是notice  
+[2022-01-22 08:16:01] local.ERROR: 这是error  
+[2022-01-22 08:16:01] local.ERROR: Class 'League\Flysystem\Adapter\Local' not found {"exception":"[object] (Error(code: 0): Class 'League\\Flysystem\\Adapter\\Local' not found at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:179)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(147): Illuminate\\Filesystem\\FilesystemManager->createLocalDriver(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
+[2022-01-22 08:22:32] local.INFO: 这是info  
+[2022-01-22 08:22:32] local.DEBUG: 这是debug  
+[2022-01-22 08:22:32] local.WARNING: 这是warning  
+[2022-01-22 08:22:32] local.NOTICE: 这是notice  
+[2022-01-22 08:22:32] local.ERROR: 这是error  
+[2022-01-22 08:22:32] local.ERROR: Class 'League\Flysystem\Adapter\Local' not found {"exception":"[object] (Error(code: 0): Class 'League\\Flysystem\\Adapter\\Local' not found at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:179)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(147): Illuminate\\Filesystem\\FilesystemManager->createLocalDriver(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
+[2022-01-22 08:26:38] local.INFO: 这是info  
+[2022-01-22 08:26:38] local.DEBUG: 这是debug  
+[2022-01-22 08:26:38] local.WARNING: 这是warning  
+[2022-01-22 08:26:38] local.NOTICE: 这是notice  
+[2022-01-22 08:26:38] local.ERROR: 这是error  
+[2022-01-22 08:26:38] local.ERROR: Class 'League\Flysystem\Adapter\Local' not found {"exception":"[object] (Error(code: 0): Class 'League\\Flysystem\\Adapter\\Local' not found at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:179)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(147): Illuminate\\Filesystem\\FilesystemManager->createLocalDriver(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
+[2022-01-22 08:26:43] local.INFO: 这是info  
+[2022-01-22 08:26:43] local.DEBUG: 这是debug  
+[2022-01-22 08:26:43] local.WARNING: 这是warning  
+[2022-01-22 08:26:43] local.NOTICE: 这是notice  
+[2022-01-22 08:26:43] local.ERROR: 这是error  
+[2022-01-22 08:26:43] local.ERROR: Class 'League\Flysystem\Adapter\Local' not found {"exception":"[object] (Error(code: 0): Class 'League\\Flysystem\\Adapter\\Local' not found at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:179)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(147): Illuminate\\Filesystem\\FilesystemManager->createLocalDriver(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
+[2022-01-22 08:26:52] local.INFO: 这是info  
+[2022-01-22 08:26:52] local.DEBUG: 这是debug  
+[2022-01-22 08:26:52] local.WARNING: 这是warning  
+[2022-01-22 08:26:52] local.NOTICE: 这是notice  
+[2022-01-22 08:26:52] local.ERROR: 这是error  
+[2022-01-22 08:26:52] local.ERROR: Class 'League\Flysystem\Adapter\Local' not found {"exception":"[object] (Error(code: 0): Class 'League\\Flysystem\\Adapter\\Local' not found at E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php:179)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(147): Illuminate\\Filesystem\\FilesystemManager->createLocalDriver(Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(115): Illuminate\\Filesystem\\FilesystemManager->resolve('local')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(78): Illuminate\\Filesystem\\FilesystemManager->get('local')
+#3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->disk('local')
+#4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(53): Illuminate\\Support\\Facades\\Facade::__callStatic('disk', Array)
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
+[2022-01-22 08:44:39] local.INFO: 这是info  
+[2022-01-22 08:44:39] local.DEBUG: 这是debug  
+[2022-01-22 08:44:39] local.WARNING: 这是warning  
+[2022-01-22 08:44:39] local.NOTICE: 这是notice  
+[2022-01-22 08:44:39] local.ERROR: 这是error  
+[2022-01-22 08:45:59] local.INFO: 这是info  
+[2022-01-22 08:45:59] local.DEBUG: 这是debug  
+[2022-01-22 08:45:59] local.WARNING: 这是warning  
+[2022-01-22 08:45:59] local.NOTICE: 这是notice  
+[2022-01-22 08:45:59] local.ERROR: 这是error  
+[2022-01-22 08:45:59] local.ERROR: The file "file.txt" does not exist {"exception":"[object] (Symfony\\Component\\HttpFoundation\\File\\Exception\\FileNotFoundException(code: 0): The file \"file.txt\" does not exist at E:\\php\\jframework\\vendor\\symfony\\http-foundation\\File\\File.php:36)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(93): Symfony\\Component\\HttpFoundation\\File\\File->__construct('file.txt')
+#1 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(51): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->setFile('file.txt', 'attachment', false, true)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Http\\ResponseFactory.php(67): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->__construct('file.txt', 200, Array, true, 'attachment')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(55): Laravel\\Lumen\\Http\\ResponseFactory->download('file.txt')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 08:46:11] local.INFO: 这是info  
+[2022-01-22 08:46:11] local.DEBUG: 这是debug  
+[2022-01-22 08:46:11] local.WARNING: 这是warning  
+[2022-01-22 08:46:11] local.NOTICE: 这是notice  
+[2022-01-22 08:46:11] local.ERROR: 这是error  
+[2022-01-22 08:46:11] local.ERROR: The file "file.txt" does not exist {"exception":"[object] (Symfony\\Component\\HttpFoundation\\File\\Exception\\FileNotFoundException(code: 0): The file \"file.txt\" does not exist at E:\\php\\jframework\\vendor\\symfony\\http-foundation\\File\\File.php:36)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(93): Symfony\\Component\\HttpFoundation\\File\\File->__construct('file.txt')
+#1 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(51): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->setFile('file.txt', 'attachment', false, true)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Http\\ResponseFactory.php(67): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->__construct('file.txt', 200, Array, true, 'attachment')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(54): Laravel\\Lumen\\Http\\ResponseFactory->download('file.txt')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 08:46:40] local.INFO: 这是info  
+[2022-01-22 08:46:40] local.DEBUG: 这是debug  
+[2022-01-22 08:46:40] local.WARNING: 这是warning  
+[2022-01-22 08:46:40] local.NOTICE: 这是notice  
+[2022-01-22 08:46:40] local.ERROR: 这是error  
+[2022-01-22 08:46:40] local.ERROR: The file "this is contents" does not exist {"exception":"[object] (Symfony\\Component\\HttpFoundation\\File\\Exception\\FileNotFoundException(code: 0): The file \"this is contents\" does not exist at E:\\php\\jframework\\vendor\\symfony\\http-foundation\\File\\File.php:36)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(93): Symfony\\Component\\HttpFoundation\\File\\File->__construct('this is content...')
+#1 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(51): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->setFile('this is content...', 'attachment', false, true)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Http\\ResponseFactory.php(67): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->__construct('this is content...', 200, Array, true, 'attachment')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(54): Laravel\\Lumen\\Http\\ResponseFactory->download('this is content...')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 08:47:37] local.INFO: 这是info  
+[2022-01-22 08:47:37] local.DEBUG: 这是debug  
+[2022-01-22 08:47:37] local.WARNING: 这是warning  
+[2022-01-22 08:47:37] local.NOTICE: 这是notice  
+[2022-01-22 08:47:37] local.ERROR: 这是error  
+[2022-01-22 08:47:37] local.ERROR: The file "file.txt" does not exist {"exception":"[object] (Symfony\\Component\\HttpFoundation\\File\\Exception\\FileNotFoundException(code: 0): The file \"file.txt\" does not exist at E:\\php\\jframework\\vendor\\symfony\\http-foundation\\File\\File.php:36)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(93): Symfony\\Component\\HttpFoundation\\File\\File->__construct('file.txt')
+#1 E:\\php\\jframework\\vendor\\symfony\\http-foundation\\BinaryFileResponse.php(51): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->setFile('file.txt', 'attachment', false, true)
+#2 E:\\php\\jframework\\jframework\\Lumen\\Http\\ResponseFactory.php(67): Symfony\\Component\\HttpFoundation\\BinaryFileResponse->__construct('file.txt', 200, Array, true, 'attachment')
+#3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(55): Laravel\\Lumen\\Http\\ResponseFactory->download('file.txt')
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#5 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#9 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#10 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#11 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+"} 
+[2022-01-22 08:48:43] local.INFO: 这是info  
+[2022-01-22 08:48:43] local.DEBUG: 这是debug  
+[2022-01-22 08:48:43] local.WARNING: 这是warning  
+[2022-01-22 08:48:43] local.NOTICE: 这是notice  
+[2022-01-22 08:48:43] local.ERROR: 这是error  
+[2022-01-22 08:48:43] local.ERROR: File not found at path: a.txt {"exception":"[object] (League\\Flysystem\\FileNotFoundException(code: 0): File not found at path: a.txt at E:\\php\\jframework\\vendor\\league\\flysystem\\src\\Filesystem.php:390)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\league\\flysystem\\src\\Filesystem.php(284): League\\Flysystem\\Filesystem->assertPresent('a.txt')
+#1 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemAdapter.php(435): League\\Flysystem\\Filesystem->getMimetype('a.txt')
+#2 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemAdapter.php(195): Illuminate\\Filesystem\\FilesystemAdapter->mimeType('a.txt')
+#3 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemAdapter.php(219): Illuminate\\Filesystem\\FilesystemAdapter->response('a.txt', 'ahaha', Array, 'attachment; fil...')
+#4 E:\\php\\jframework\\vendor\\illuminate\\filesystem\\FilesystemManager.php(411): Illuminate\\Filesystem\\FilesystemAdapter->download('a.txt', 'ahaha')
+#5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(261): Illuminate\\Filesystem\\FilesystemManager->__call('download', Array)
+#6 E:\\php\\jframework\\app\\Controllers\\HomeController.php(55): Illuminate\\Support\\Facades\\Facade::__callStatic('download', Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#8 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#11 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#12 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(389): Illuminate\\Container\\Container->call(Array, Array)
+#13 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(355): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#14 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(329): Laravel\\Lumen\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#15 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(282): Laravel\\Lumen\\Application->callControllerAction(Array)
+#16 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(267): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#17 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#18 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#19 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#20 E:\\php\\jframework\\jframework\\Lumen\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#21 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#22 {main}
+"} 
+[2022-01-22 08:49:18] local.INFO: 这是info  
+[2022-01-22 08:49:18] local.DEBUG: 这是debug  
+[2022-01-22 08:49:18] local.WARNING: 这是warning  
+[2022-01-22 08:49:18] local.NOTICE: 这是notice  
+[2022-01-22 08:49:18] local.ERROR: 这是error  

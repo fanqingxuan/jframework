@@ -7,7 +7,6 @@ use Illuminate\Container\Container;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Database\DatabaseServiceProvider;
 use Illuminate\Database\MigrationServiceProvider;
-use Illuminate\Encryption\EncryptionServiceProvider;
 use Illuminate\Events\EventServiceProvider;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemServiceProvider;
@@ -356,18 +355,6 @@ class Application extends Container
                     DatabaseServiceProvider::class,
                 ], 'db'
             );
-        });
-    }
-
-    /**
-     * Register container bindings for the application.
-     *
-     * @return void
-     */
-    protected function registerEncrypterBindings()
-    {
-        $this->singleton('encrypter', function () {
-            return $this->loadComponent('app', EncryptionServiceProvider::class, 'encrypter');
         });
     }
 
@@ -955,14 +942,12 @@ class Application extends Container
         'config' => 'registerConfigBindings',
         'db' => 'registerDatabaseBindings',
         \Illuminate\Database\Eloquent\Factory::class => 'registerDatabaseBindings',
-        // 'filesystem' => 'registerFilesystemBindings',
-        // 'filesystem.cloud' => 'registerFilesystemBindings',
-        // 'filesystem.disk' => 'registerFilesystemBindings',
-        // \Illuminate\Contracts\Filesystem\Cloud::class => 'registerFilesystemBindings',
-        // \Illuminate\Contracts\Filesystem\Filesystem::class => 'registerFilesystemBindings',
-        // \Illuminate\Contracts\Filesystem\Factory::class => 'registerFilesystemBindings',
-        // 'encrypter' => 'registerEncrypterBindings',
-        // \Illuminate\Contracts\Encryption\Encrypter::class => 'registerEncrypterBindings',
+        'filesystem' => 'registerFilesystemBindings',
+        'filesystem.cloud' => 'registerFilesystemBindings',
+        'filesystem.disk' => 'registerFilesystemBindings',
+        \Illuminate\Contracts\Filesystem\Cloud::class => 'registerFilesystemBindings',
+        \Illuminate\Contracts\Filesystem\Filesystem::class => 'registerFilesystemBindings',
+        \Illuminate\Contracts\Filesystem\Factory::class => 'registerFilesystemBindings',
         'events' => 'registerEventBindings',
         \Illuminate\Contracts\Events\Dispatcher::class => 'registerEventBindings',
         // 'files' => 'registerFilesBindings',

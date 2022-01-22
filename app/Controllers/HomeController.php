@@ -5,9 +5,12 @@ namespace App\Controllers;
 use App\Events\SampleEvent;
 use App\Services\UserService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\URL;
+use Kint\Kint;
 
 class HomeController extends Controller {
 
@@ -40,12 +43,15 @@ class HomeController extends Controller {
         //event(new SampleEvent($this->userService->listUser()));
         // Event::dispatch(new SampleEvent($this->userService->listUser()));
         SampleEvent::dispatch($this->userService->listUser());
-
+        p($this->userService->listUser(),$this);
+        
         Log::info("这是info");
         Log::debug("这是debug");
         Log::warning("这是warning");
         Log::notice("这是notice");
         Log::error("这是error");
-        return [];
+        Storage::disk("local")->put("file.txt","this is contents");
+        p(Storage::disk("local")->exists("file.txt"));
+        return Storage::url("a.txt");
     }
 }
