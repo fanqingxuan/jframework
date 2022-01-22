@@ -7,6 +7,7 @@ use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\URL;
@@ -52,6 +53,11 @@ class HomeController extends Controller {
         Log::error("这是error");
         Storage::disk("local")->put("file.txt","this is contents");
         p(Storage::disk("local")->exists("file.txt"));
+        p(File::isFile("file.txt"));
         return Storage::url("a.txt");
+    }
+
+    public function test_redis() {
+        
     }
 }

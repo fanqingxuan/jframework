@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Auth\Factory as AuthFactory;
-use Illuminate\Contracts\Broadcasting\Factory as BroadcastFactory;
-use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Lumen\Bus\PendingDispatch;
+use Kint\Kint;
+use Kint\Renderer\RichRenderer;
+
+function __init_kint() {
+    RichRenderer::$theme = 'aante-light.css';
+}
 
 if (! function_exists('abort')) {
     /**
@@ -43,23 +45,6 @@ if (! function_exists('app')) {
     }
 }
 
-if (! function_exists('auth')) {
-    /**
-     * Get the available auth instance.
-     *
-     * @param  string|null  $guard
-     * @return \Illuminate\Contracts\Auth\Factory|\Illuminate\Contracts\Auth\Guard|\Illuminate\Contracts\Auth\StatefulGuard
-     */
-    function auth($guard = null)
-    {
-        if (is_null($guard)) {
-            return app(AuthFactory::class);
-        }
-
-        return app(AuthFactory::class)->guard($guard);
-    }
-}
-
 if (! function_exists('base_path')) {
     /**
      * Get the path to the base of the install.
@@ -70,59 +55,6 @@ if (! function_exists('base_path')) {
     function base_path($path = '')
     {
         return app()->basePath().($path ? '/'.$path : $path);
-    }
-}
-
-if (! function_exists('broadcast')) {
-    /**
-     * Begin broadcasting an event.
-     *
-     * @param  mixed|null  $event
-     * @return \Illuminate\Broadcasting\PendingBroadcast
-     */
-    function broadcast($event = null)
-    {
-        return app(BroadcastFactory::class)->event($event);
-    }
-}
-
-if (! function_exists('decrypt')) {
-    /**
-     * Decrypt the given value.
-     *
-     * @param  string  $value
-     * @return string
-     */
-    function decrypt($value)
-    {
-        return app('encrypter')->decrypt($value);
-    }
-}
-
-if (! function_exists('dispatch')) {
-    /**
-     * Dispatch a job to its appropriate handler.
-     *
-     * @param  mixed  $job
-     * @return mixed
-     */
-    function dispatch($job)
-    {
-        return new PendingDispatch($job);
-    }
-}
-
-if (! function_exists('dispatch_now')) {
-    /**
-     * Dispatch a command to its appropriate handler in the current process.
-     *
-     * @param  mixed  $job
-     * @param  mixed  $handler
-     * @return mixed
-     */
-    function dispatch_now($job, $handler = null)
-    {
-        return app(Dispatcher::class)->dispatchNow($job, $handler);
     }
 }
 
@@ -160,19 +92,6 @@ if (! function_exists('database_path')) {
     function database_path($path = '')
     {
         return app()->databasePath($path);
-    }
-}
-
-if (! function_exists('encrypt')) {
-    /**
-     * Encrypt the given value.
-     *
-     * @param  string  $value
-     * @return string
-     */
-    function encrypt($value)
-    {
-        return app('encrypter')->encrypt($value);
     }
 }
 
@@ -326,55 +245,6 @@ if (! function_exists('storage_path')) {
     }
 }
 
-if (! function_exists('trans')) {
-    /**
-     * Translate the given message.
-     *
-     * @param  string|null  $id
-     * @param  array  $replace
-     * @param  string|null  $locale
-     * @return \Illuminate\Contracts\Translation\Translator|string|array|null
-     */
-    function trans($id = null, $replace = [], $locale = null)
-    {
-        if (is_null($id)) {
-            return app('translator');
-        }
-
-        return app('translator')->get($id, $replace, $locale);
-    }
-}
-
-if (! function_exists('__')) {
-    /**
-     * Translate the given message.
-     *
-     * @param  string  $key
-     * @param  array  $replace
-     * @param  string|null  $locale
-     * @return string|array|null
-     */
-    function __($key, $replace = [], $locale = null)
-    {
-        return app('translator')->get($key, $replace, $locale);
-    }
-}
-
-if (! function_exists('trans_choice')) {
-    /**
-     * Translates the given message based on a count.
-     *
-     * @param  string  $id
-     * @param  int|array|\Countable  $number
-     * @param  array  $replace
-     * @param  string|null  $locale
-     * @return string
-     */
-    function trans_choice($id, $number, array $replace = [], $locale = null)
-    {
-        return app('translator')->choice($id, $number, $replace, $locale);
-    }
-}
 
 if (! function_exists('url')) {
     /**
@@ -413,23 +283,40 @@ if (! function_exists('validator')) {
     }
 }
 
-if (! function_exists('view')) {
+if (!function_exists('p')) {
+   
     /**
-     * Get the evaluated view contents for the given view.
+     * Alias of Kint::dump().
      *
-     * @param  string  $view
-     * @param  array  $data
-     * @param  array  $mergeData
-     * @return \Illuminate\View\View
+     * @return int|string
      */
-    function view($view = null, $data = [], $mergeData = [])
+    function p()
     {
-        $factory = app('view');
+        __init_kint();
+        $args = \func_get_args();
 
-        if (func_num_args() === 0) {
-            return $factory;
+        return \call_user_func_array(['Kint', 'dump'], $args);
+    }
+
+    Kint::$aliases[] = 'p';
+}
+
+if (!function_exists('pp')) {
+    /**
+     * @return never
+     */
+    function pp(...$vars)
+    {
+        __init_kint();
+        if (!in_array(\PHP_SAPI, ['cli', 'phpdbg'], true) && !headers_sent()) {
+            header('HTTP/1.1 500 Internal Server Error');
         }
 
-        return $factory->make($view, $data, $mergeData);
+        $args = \func_get_args();
+
+        \call_user_func_array(['Kint', 'dump'], $args);
+
+        exit(1);
     }
+    Kint::$aliases[] = 'pp';
 }

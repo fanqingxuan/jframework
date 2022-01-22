@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1704a294347ed09ba4bb3cee51d834a5",
+    "content-hash": "4c90f0aa0f0ba61ba35d5de3f128bebc",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -798,6 +798,60 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-03-26T18:39:16+00:00"
+        },
+        {
+            "name": "illuminate/redis",
+            "version": "v8.80.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/redis.git",
+                "reference": "5430c7f8ed41f8432a9a1986be56f902a1b7e67f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/redis/zipball/5430c7f8ed41f8432a9a1986be56f902a1b7e67f",
+                "reference": "5430c7f8ed41f8432a9a1986be56f902a1b7e67f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/collections": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/macroable": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "suggest": {
+                "ext-redis": "Required to use the phpredis connector (^4.0|^5.0).",
+                "predis/predis": "Required to use the predis connector (^1.1.9)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Redis\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Redis package.",
+            "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2022-01-15T15:31:34+00:00"
         },
         {
             "name": "illuminate/session",
