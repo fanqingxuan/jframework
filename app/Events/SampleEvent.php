@@ -4,7 +4,6 @@ namespace App\Events;
 
 class SampleEvent extends Event
 {
-
     public $userlist;
     /**
      * Create a new event instance.

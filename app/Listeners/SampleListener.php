@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Collection;
 
 class SampleListener
 {
-
     private $userlist;
     /**
      * Create the event listener.
