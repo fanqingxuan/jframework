@@ -11,7 +11,6 @@ use Illuminate\Encryption\EncryptionServiceProvider;
 use Illuminate\Events\EventServiceProvider;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemServiceProvider;
-use Illuminate\Hashing\HashServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Log\LogManager;
 use Illuminate\Queue\QueueServiceProvider;
@@ -421,25 +420,10 @@ class Application extends Container
      *
      * @return void
      */
-    protected function registerHashBindings()
-    {
-        $this->singleton('hash', function () {
-            $this->register(HashServiceProvider::class);
-
-            return $this->make('hash');
-        });
-    }
-
-    /**
-     * Register container bindings for the application.
-     *
-     * @return void
-     */
     protected function registerLogBindings()
     {
         $this->singleton(LoggerInterface::class, function () {
             $this->configure('logging');
-
             return new LogManager($this);
         });
     }
@@ -939,7 +923,7 @@ class Application extends Container
             // \Illuminate\Contracts\Filesystem\Filesystem::class => 'filesystem.disk',
             // \Illuminate\Contracts\Filesystem\Cloud::class => 'filesystem.cloud',
             // \Illuminate\Contracts\Hashing\Hasher::class => 'hash',
-            // 'log' => \Psr\Log\LoggerInterface::class,
+            'log' => \Psr\Log\LoggerInterface::class,
             // \Illuminate\Contracts\Queue\Factory::class => 'queue',
             // \Illuminate\Contracts\Queue\Queue::class => 'queue.connection',
             // \Illuminate\Redis\RedisManager::class => 'redis',
@@ -982,8 +966,6 @@ class Application extends Container
         'events' => 'registerEventBindings',
         \Illuminate\Contracts\Events\Dispatcher::class => 'registerEventBindings',
         // 'files' => 'registerFilesBindings',
-        // 'hash' => 'registerHashBindings',
-        // \Illuminate\Contracts\Hashing\Hasher::class => 'registerHashBindings',
         'log' => 'registerLogBindings',
         \Psr\Log\LoggerInterface::class => 'registerLogBindings',
         // 'queue' => 'registerQueueBindings',

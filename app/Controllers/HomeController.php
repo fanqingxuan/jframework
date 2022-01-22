@@ -6,6 +6,7 @@ use App\Events\SampleEvent;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
 
 class HomeController extends Controller {
@@ -39,6 +40,12 @@ class HomeController extends Controller {
         //event(new SampleEvent($this->userService->listUser()));
         // Event::dispatch(new SampleEvent($this->userService->listUser()));
         SampleEvent::dispatch($this->userService->listUser());
+
+        Log::info("这是info");
+        Log::debug("这是debug");
+        Log::warning("这是warning");
+        Log::notice("这是notice");
+        Log::error("这是error");
         return [];
     }
 }

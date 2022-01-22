@@ -26,6 +26,6 @@ class SampleListener
      */
     public function handle(SampleEvent $event)
     {
-        dd($event->userlist);
+        dump($event->userlist);
     }
 }
