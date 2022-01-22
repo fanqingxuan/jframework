@@ -1,6 +1,7 @@
 <?php
 
 use App\Providers\EventServiceProvider;
+use App\Providers\RedisServiceProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
@@ -95,6 +96,7 @@ $app->configure('app');
 
 // $app->register(App\Providers\AppServiceProvider::class);
 $app->register(EventServiceProvider::class);
+$app->register(RedisServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

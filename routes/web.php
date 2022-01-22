@@ -20,3 +20,4 @@ $router->get('/', function () use ($router) {
 $router->get("/home","HomeController@index");
 $router->get("/list","HomeController@list");
 $router->get("/test_event","HomeController@test_event");
+$router->get("/test_redis","HomeController@test_redis");

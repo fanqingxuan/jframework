@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Events\SampleEvent;
 use App\Services\UserService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\URL;
 use Kint\Kint;
@@ -58,6 +58,6 @@ class HomeController extends Controller {
     }
 
     public function test_redis() {
-        
+        return Redis::lrange("a",0,-1);
     }
 }
