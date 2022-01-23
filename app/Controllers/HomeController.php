@@ -49,7 +49,7 @@ class HomeController extends Controller
         //event(new SampleEvent($this->userService->listUser()));
         // Event::dispatch(new SampleEvent($this->userService->listUser()));
         SampleEvent::dispatch($this->userService->listUser());
-        p($this->userService->listUser(), $this);
+        dump($this->userService->listUser(), $this);
 
         Log::info("这是info");
         Log::debug("这是debug");
@@ -57,7 +57,6 @@ class HomeController extends Controller
         Log::notice("这是notice");
         Log::error("这是error");
         Storage::disk("local")->put("file.txt", "this is contents");
-        HelloEvent::dispatch();
         return User::all();
     }
 

@@ -99,9 +99,9 @@ class UrlGenerator
         $tail = implode(
             '/',
             array_map(
-            'rawurlencode',
-            (array) $extra
-        )
+                'rawurlencode',
+                (array) $extra
+            )
         );
 
         // Once we have the scheme we will compile the "tail" by collapsing the values

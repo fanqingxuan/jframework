@@ -2,7 +2,6 @@
 
 namespace App\Console;
 
-use App\Console\Commands\HelloCommand;
 use JFramework\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel

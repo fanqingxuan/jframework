@@ -15,7 +15,7 @@ class CreateUser extends Migration
     {
         Schema::create('user', function (Blueprint $table) {
             $table->id();
-            $table->string("username",40)->nullable(false)->default('');
+            $table->string("username", 40)->nullable(false)->default('');
             $table->timestamps();
         });
     }

@@ -19,8 +19,5 @@ class EventServiceProvider extends ServiceProvider
         SampleEvent::class => [
             SampleListener::class,
         ],
-        HelloEvent::class => [
-            HelloListener::class
-        ]
     ];
 }

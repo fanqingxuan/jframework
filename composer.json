@@ -1,7 +1,7 @@
 {
     "name": "json/jframework",
     "description": "A PHP Framework As Lumen Simplified Version.",
-    "keywords": ["framework", "php", "lumen","laravel"],
+    "keywords": ["framework", "php", "lumen","laravel","JsonLumen"],
     "license": "MIT",
     "type": "project",
     "homepage": "https://github.com/fanqingxuan",

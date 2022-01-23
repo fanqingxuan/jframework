@@ -11,7 +11,6 @@ use Illuminate\Database\Console\Migrations\RefreshCommand as MigrateRefreshComma
 use Illuminate\Database\Console\Migrations\ResetCommand as MigrateResetCommand;
 use Illuminate\Database\Console\Migrations\RollbackCommand as MigrateRollbackCommand;
 use Illuminate\Database\Console\Migrations\StatusCommand as MigrateStatusCommand;
-use Illuminate\Foundation\Console\ServeCommand;
 use Illuminate\Support\ServiceProvider;
 use JFramework\Console\Commands\ConsoleMakeCommand;
 use JFramework\Console\Commands\ControllerMakeCommand;

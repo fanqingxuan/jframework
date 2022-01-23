@@ -190,8 +190,9 @@ class Kernel implements KernelContract
     protected function getArtisan()
     {
         if (is_null($this->artisan)) {
-            return $this->artisan = (new Artisan($this->app, $this->app->make('events'), $this->app->version()))
+            $this->artisan = (new Artisan($this->app, $this->app->make('events'), $this->app->version()))
                                 ->resolveCommands($this->getCommands());
+            $this->artisan->setName("JsonFramework");
         }
 
         return $this->artisan;

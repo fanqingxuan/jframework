@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Illuminate\Http\Request;
+
 class HelloController extends Controller
 {
     /**
@@ -14,9 +16,9 @@ class HelloController extends Controller
         //
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        dump($this);
+        dump($request->username);
         dd($this);
     }
 }

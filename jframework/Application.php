@@ -92,7 +92,7 @@ class Application extends Container
     public $router;
 
     /**
-     * Create a new Lumen application instance.
+     * Create a new application instance.
      *
      * @param  string|null  $basePath
      * @return void
@@ -174,7 +174,7 @@ class Application extends Container
      */
     public function version()
     {
-        return 'Lumen (8.3.4) (Laravel Components ^8.0)';
+        return 'Lumen Simplified Version (8.3.4) (Laravel Components ^8.0)';
     }
 
     /**
@@ -553,6 +553,7 @@ class Application extends Container
                 return $path;
             }
         }
+        return '';
     }
 
     /**
@@ -885,7 +886,6 @@ class Application extends Container
         'log' => 'registerLogBindings',
         \Psr\Log\LoggerInterface::class => 'registerLogBindings',
 
-        // 'router' => 'registerRouterBindings',
         'url' => 'registerUrlGeneratorBindings',
         // 'validator' => 'registerValidatorBindings',
         // \Illuminate\Contracts\Validation\Factory::class => 'registerValidatorBindings',
