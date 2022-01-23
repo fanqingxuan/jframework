@@ -57,7 +57,6 @@ class HomeController extends Controller
         Log::notice("这是notice");
         Log::error("这是error");
         Storage::disk("local")->put("file.txt", "this is contents");
-        p(Storage::disk("local")->exists("file.txt"));
         HelloEvent::dispatch();
         return User::all();
     }

@@ -284,14 +284,14 @@ if (! function_exists('validator')) {
     }
 }
 
-if (!function_exists('p')) {
+if (!function_exists('dump')) {
 
     /**
      * Alias of Kint::dump().
      *
      * @return int|string
      */
-    function p()
+    function dump()
     {
         __init_kint();
         $args = \func_get_args();
@@ -299,14 +299,14 @@ if (!function_exists('p')) {
         return \call_user_func_array(['Kint', 'dump'], $args);
     }
 
-    Kint::$aliases[] = 'p';
+    Kint::$aliases[] = 'dump';
 }
 
-if (!function_exists('pp')) {
+if (!function_exists('dd')) {
     /**
      * @return never
      */
-    function pp(...$vars)
+    function dd(...$vars)
     {
         __init_kint();
         if (!in_array(\PHP_SAPI, ['cli', 'phpdbg'], true) && !headers_sent()) {
@@ -319,7 +319,7 @@ if (!function_exists('pp')) {
 
         exit(1);
     }
-    Kint::$aliases[] = 'pp';
+    Kint::$aliases[] = 'dd';
 }
 
 if (! function_exists('public_path')) {

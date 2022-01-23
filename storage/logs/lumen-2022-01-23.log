@@ -22,3 +22,43 @@
 #14 E:\\php\\jframework\\public\\index.php(28): JFramework\\Application->run()
 #15 {main}
 "} 
+[2022-01-23 02:40:46] local.INFO: 这是info  
+[2022-01-23 02:40:46] local.DEBUG: 这是debug  
+[2022-01-23 02:40:46] local.WARNING: 这是warning  
+[2022-01-23 02:40:46] local.NOTICE: 这是notice  
+[2022-01-23 02:40:46] local.ERROR: 这是error  
+[2022-01-23 02:40:46] local.ERROR: Class 'App\Events\HelloEvent' not found {"exception":"[object] (Error(code: 0): Class 'App\\Events\\HelloEvent' not found at E:\\php\\jframework\\app\\Controllers\\HomeController.php:60)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(JFramework\\Application), Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(JFramework\\Application), Array, Array, NULL)
+#5 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(394): Illuminate\\Container\\Container->call(Array, Array)
+#6 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(360): JFramework\\Application->callControllerCallable(Array, Array)
+#7 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(329): JFramework\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#8 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(282): JFramework\\Application->callControllerAction(Array)
+#9 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(267): JFramework\\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(169): JFramework\\Application->handleFoundRoute(Array)
+#11 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(434): JFramework\\Application->JFramework\\Concerns\\{closure}(Object(JFramework\\Http\\Request))
+#12 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(175): JFramework\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(112): JFramework\\Application->dispatch(NULL)
+#14 E:\\php\\jframework\\public\\index.php(28): JFramework\\Application->run()
+#15 {main}
+"} 
+[2022-01-23 03:05:26] local.ERROR: Class 'Illuminate\Foundation\Console\ServeCommand' not found {"exception":"[object] (Error(code: 0): Class 'Illuminate\\Foundation\\Console\\ServeCommand' not found at E:\\php\\jframework\\jframework\\Console\\ConsoleServiceProvider.php:250)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): JFramework\\Console\\ConsoleServiceProvider->JFramework\\Console\\{closure}(Object(JFramework\\Application), Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('command.serve', Array)
+#3 E:\\php\\jframework\\jframework\\Application.php(312): Illuminate\\Container\\Container->make('command.serve', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(262): JFramework\\Application->make('command.serve')
+#5 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(276): Illuminate\\Console\\Application->resolve('command.serve')
+#6 E:\\php\\jframework\\vendor\\illuminate\\support\\ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands(Array)
+#7 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}(Object(Illuminate\\Console\\Application))
+#8 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#9 E:\\php\\jframework\\jframework\\Console\\Kernel.php(193): Illuminate\\Console\\Application->__construct(Object(JFramework\\Application), Object(Illuminate\\Events\\Dispatcher), 'Lumen (8.3.4) (...')
+#10 E:\\php\\jframework\\jframework\\Console\\Kernel.php(110): JFramework\\Console\\Kernel->getArtisan()
+#11 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 

@@ -13,6 +13,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "funkjedi/composer-include-files": "^1.1",
         "illuminate/config": "^8.80",
         "illuminate/console": "^8.80",
         "illuminate/container": "^8.77",
@@ -34,6 +35,11 @@
             "JFramework\\": "jframework/"
         },
         "files": [
+            
+        ]
+    },
+    "extra": {
+        "include_files": [
             "jframework/helpers.php"
         ]
     },

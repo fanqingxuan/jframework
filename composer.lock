@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12f132a1db80347365c573c35b2a8966",
+    "content-hash": "7cc384be41fbf1673832036335ef4bda",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -96,6 +96,54 @@
                 }
             ],
             "time": "2021-10-22T20:16:43+00:00"
+        },
+        {
+            "name": "funkjedi/composer-include-files",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funkjedi/composer-include-files.git",
+                "reference": "7e4f8ec0f83d57434aaa3cd6f736378c68e19d4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funkjedi/composer-include-files/zipball/7e4f8ec0f83d57434aaa3cd6f736378c68e19d4b",
+                "reference": "7e4f8ec0f83d57434aaa3cd6f736378c68e19d4b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "ComposerIncludeFiles\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ComposerIncludeFiles\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Robertson",
+                    "email": "funkjedi@gmail.com"
+                }
+            ],
+            "description": "Include files at a higher priority than autoload files.",
+            "homepage": "https://github.com/funkjedi/composer-include-files",
+            "keywords": [
+                "autoload",
+                "composer"
+            ],
+            "support": {
+                "issues": "https://github.com/funkjedi/composer-include-files/issues",
+                "source": "https://github.com/funkjedi/composer-include-files/tree/master"
+            },
+            "time": "2020-06-25T19:56:07+00:00"
         },
         {
             "name": "graham-campbell/result-type",

@@ -11,6 +11,7 @@ use Illuminate\Database\Console\Migrations\RefreshCommand as MigrateRefreshComma
 use Illuminate\Database\Console\Migrations\ResetCommand as MigrateResetCommand;
 use Illuminate\Database\Console\Migrations\RollbackCommand as MigrateRollbackCommand;
 use Illuminate\Database\Console\Migrations\StatusCommand as MigrateStatusCommand;
+use Illuminate\Foundation\Console\ServeCommand;
 use Illuminate\Support\ServiceProvider;
 use JFramework\Console\Commands\ConsoleMakeCommand;
 use JFramework\Console\Commands\ControllerMakeCommand;
@@ -18,6 +19,7 @@ use JFramework\Console\Commands\EventMakeCommand;
 use JFramework\Console\Commands\ListenerMakeCommand;
 use JFramework\Console\Commands\ModelMakeCommand;
 use JFramework\Console\Commands\ProviderMakeCommand;
+use JFramework\Console\Commands\ServeCommand as CommandsServeCommand;
 use JFramework\Console\Commands\ServiceMakeCommand;
 use JFramework\Console\Commands\StorageLinkCommand;
 
@@ -54,6 +56,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'ConsoleMake'    => 'command.console.make',
         'ServiceMake'    => 'command.service.make',
         'ControllerMake' => 'command.controller.make',
+        'Serve'          => 'command.serve',
     ];
 
     /**
@@ -234,6 +237,18 @@ class ConsoleServiceProvider extends ServiceProvider
     {
         $this->app->singleton('command.controller.make', function ($app) {
             return new ControllerMakeCommand($app['files']);
+        });
+    }
+
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerServeCommand()
+    {
+        $this->app->singleton('command.serve', function ($app) {
+            return new CommandsServeCommand();
         });
     }
 
