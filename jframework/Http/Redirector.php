@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Lumen\Http;
+namespace JFramework\Http;
 
 use Illuminate\Http\RedirectResponse;
-use Laravel\Lumen\Application;
+use JFramework\Application;
 
 class Redirector
 {
     /**
      * The application instance.
      *
-     * @var \Laravel\Lumen\Application
+     * @var \JFramework\Application
      */
     protected $app;
 
     /**
      * Create a new redirector instance.
      *
-     * @param  \Laravel\Lumen\Application  $app
+     * @param  \JFramework\Application  $app
      * @return void
      */
     public function __construct(Application $app)

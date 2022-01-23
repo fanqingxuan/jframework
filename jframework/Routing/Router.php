@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Lumen\Routing;
+namespace JFramework\Routing;
 
 use Illuminate\Support\Arr;
 
@@ -9,7 +9,7 @@ class Router
     /**
      * The application instance.
      *
-     * @var \Laravel\Lumen\Application
+     * @var \JFramework\Application
      */
     public $app;
 
@@ -37,7 +37,7 @@ class Router
     /**
      * Router constructor.
      *
-     * @param  \Laravel\Lumen\Application  $app
+     * @param  \JFramework\Application  $app
      */
     public function __construct($app)
     {

@@ -1,0 +1,24 @@
+[2022-01-23 02:36:47] local.INFO: 这是info  
+[2022-01-23 02:36:47] local.DEBUG: 这是debug  
+[2022-01-23 02:36:47] local.WARNING: 这是warning  
+[2022-01-23 02:36:47] local.NOTICE: 这是notice  
+[2022-01-23 02:36:47] local.ERROR: 这是error  
+[2022-01-23 02:36:47] local.ERROR: Class 'App\Events\HelloEvent' not found {"exception":"[object] (Error(code: 0): Class 'App\\Events\\HelloEvent' not found at E:\\php\\jframework\\app\\Controllers\\HomeController.php:61)
+[stacktrace]
+#0 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_event()
+#1 E:\\php\\jframework\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(JFramework\\Application), Array, Object(Closure))
+#4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(JFramework\\Application), Array, Array, NULL)
+#5 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(394): Illuminate\\Container\\Container->call(Array, Array)
+#6 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(360): JFramework\\Application->callControllerCallable(Array, Array)
+#7 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(329): JFramework\\Application->callLumenController(Object(App\\Controllers\\HomeController), 'test_event', Array)
+#8 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(282): JFramework\\Application->callControllerAction(Array)
+#9 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(267): JFramework\\Application->callActionOnArrayBasedRoute(Array)
+#10 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(169): JFramework\\Application->handleFoundRoute(Array)
+#11 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(434): JFramework\\Application->JFramework\\Concerns\\{closure}(Object(JFramework\\Http\\Request))
+#12 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(175): JFramework\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 E:\\php\\jframework\\jframework\\Concerns\\RoutesRequests.php(112): JFramework\\Application->dispatch(NULL)
+#14 E:\\php\\jframework\\public\\index.php(28): JFramework\\Application->run()
+#15 {main}
+"} 

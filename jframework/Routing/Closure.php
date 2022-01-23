@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Lumen\Routing;
+namespace JFramework\Routing;
 
 class Closure
 {

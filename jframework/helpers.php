@@ -34,7 +34,7 @@ if (! function_exists('app')) {
      *
      * @param  string|null  $make
      * @param  array  $parameters
-     * @return mixed|\Laravel\Lumen\Application
+     * @return mixed|\JFramework\Application
      */
     function app($make = null, array $parameters = [])
     {
@@ -133,11 +133,11 @@ if (! function_exists('redirect')) {
      * @param  int  $status
      * @param  array  $headers
      * @param  bool|null  $secure
-     * @return \Laravel\Lumen\Http\Redirector|\Illuminate\Http\RedirectResponse
+     * @return \JFramework\Http\Redirector|\Illuminate\Http\RedirectResponse
      */
     function redirect($to = null, $status = 302, $headers = [], $secure = null)
     {
-        $redirector = new Laravel\Lumen\Http\Redirector(app());
+        $redirector = new JFramework\Http\Redirector(app());
 
         if (is_null($to)) {
             return $redirector;
@@ -204,11 +204,11 @@ if (! function_exists('response')) {
      * @param  string  $content
      * @param  int  $status
      * @param  array  $headers
-     * @return \Illuminate\Http\Response|\Laravel\Lumen\Http\ResponseFactory
+     * @return \Illuminate\Http\Response|\JFramework\Http\ResponseFactory
      */
     function response($content = '', $status = 200, array $headers = [])
     {
-        $factory = new Laravel\Lumen\Http\ResponseFactory();
+        $factory = new JFramework\Http\ResponseFactory();
 
         if (func_num_args() === 0) {
             return $factory;

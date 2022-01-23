@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Lumen\Routing;
+namespace JFramework\Routing;
 
 use Closure as BaseClosure;
 use Illuminate\Contracts\Debug\ExceptionHandler;

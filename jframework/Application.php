@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Lumen;
+namespace JFramework;
 
 use Illuminate\Config\Repository as ConfigRepository;
 use Illuminate\Container\Container;
@@ -17,8 +17,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationServiceProvider;
 use JFramework\Console\ConsoleServiceProvider;
-use Laravel\Lumen\Routing\Router;
-use Laravel\Lumen\Routing\UrlGenerator;
+use JFramework\Routing\Router;
+use JFramework\Routing\UrlGenerator;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
@@ -87,7 +87,7 @@ class Application extends Container
     /**
      * The Router instance.
      *
-     * @var \Laravel\Lumen\Routing\Router
+     * @var \JFramework\Routing\Router
      */
     public $router;
 

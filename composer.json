@@ -31,11 +31,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Laravel\\Lumen\\": "jframework/Lumen/",
-            "JFramework\\": "jframework/JFramework/"
+            "JFramework\\": "jframework/"
         },
         "files": [
-            "jframework/Lumen/helpers.php"
+            "jframework/helpers.php"
         ]
     },
     "config": {

@@ -6,7 +6,7 @@ use App\Events\HelloEvent;
 use App\Events\SampleEvent;
 use App\Listeners\HelloListener;
 use App\Listeners\SampleListener;
-use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
+use JFramework\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {

@@ -9,8 +9,8 @@ use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Laravel\Lumen\Application;
-use Laravel\Lumen\Exceptions\Handler;
+use JFramework\Application;
+use JFramework\Exceptions\Handler;
 use ReflectionClass;
 use RuntimeException;
 use Symfony\Component\Finder\Finder;
@@ -21,7 +21,7 @@ class Kernel implements KernelContract
     /**
      * The application implementation.
      *
-     * @var \Laravel\Lumen\Application
+     * @var \JFramework\Application
      */
     protected $app;
 
@@ -49,7 +49,7 @@ class Kernel implements KernelContract
     /**
      * Create a new console kernel instance.
      *
-     * @param  \Laravel\Lumen\Application  $app
+     * @param  \JFramework\Application  $app
      * @return void
      */
     public function __construct(Application $app)

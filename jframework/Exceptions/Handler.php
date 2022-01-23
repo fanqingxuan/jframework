@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Lumen\Exceptions;
+namespace JFramework\Exceptions;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;

@@ -1,18 +1,18 @@
 <?php
 
-namespace Laravel\Lumen\Routing;
+namespace JFramework\Routing;
 
 use Illuminate\Contracts\Routing\UrlRoutable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Laravel\Lumen\Application;
+use JFramework\Application;
 
 class UrlGenerator
 {
     /**
      * The application instance.
      *
-     * @var \Laravel\Lumen\Application
+     * @var \JFramework\Application
      */
     protected $app;
 
@@ -47,7 +47,7 @@ class UrlGenerator
     /**
      * Create a new URL redirector instance.
      *
-     * @param  \Laravel\Lumen\Application  $app
+     * @param  \JFramework\Application  $app
      * @return void
      */
     public function __construct(Application $app)

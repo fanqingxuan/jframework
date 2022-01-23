@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Lumen\Concerns;
+namespace JFramework\Concerns;
 
 use ErrorException;
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Log\LogManager;
-use Laravel\Lumen\Exceptions\Handler;
+use JFramework\Exceptions\Handler;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\ErrorHandler\Error\FatalError;
 use Symfony\Component\HttpKernel\Exception\HttpException;

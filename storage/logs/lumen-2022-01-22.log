@@ -207,10 +207,13 @@
 #16 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #17 {main}
 "} 
-[2022-01-22 09:56:27] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php:120)
+[2022-01-22 09:56:27] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php:120)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -230,10 +233,13 @@
 #18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #19 {main}
 "} 
-[2022-01-22 10:07:00] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php:120)
+[2022-01-22 10:07:00] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php:120)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -253,10 +259,13 @@
 #18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #19 {main}
 "} 
-[2022-01-22 10:07:01] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php:120)
+[2022-01-22 10:07:01] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php:120)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -276,10 +285,13 @@
 #18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #19 {main}
 "} 
-[2022-01-22 10:07:02] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php:120)
+[2022-01-22 10:07:02] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php:120)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -299,10 +311,13 @@
 #18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #19 {main}
 "} 
-[2022-01-22 10:07:27] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php:120)
+[2022-01-22 10:07:27] local.ERROR: Redis connection [default] not configured. {"exception":"[object] (InvalidArgumentException(code: 0): Redis connection [default] not configured. at E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php:120)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #2 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #3 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -322,11 +337,15 @@
 #18 E:\\php\\jframework\\public\\index.php(28): Laravel\\Lumen\\Application->run()
 #19 {main}
 "} 
-[2022-01-22 10:18:41] local.ERROR: Class 'Predis\Client' not found {"exception":"[object] (Error(code: 0): Class 'Predis\\Client' not found at E:\\php\\jframework\\vendor\\illuminate\edis\\Connectors\\PredisConnector.php:30)
+[2022-01-22 10:18:41] local.ERROR: Class 'Predis\Client' not found {"exception":"[object] (Error(code: 0): Class 'Predis\\Client' not found at E:\\php\\jframework\\vendor\\illuminate\
+edis\\Connectors\\PredisConnector.php:30)
 [stacktrace]
-#0 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(112): Illuminate\\Redis\\Connectors\\PredisConnector->connect(Array, Array)
-#1 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
-#2 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
+#0 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(112): Illuminate\\Redis\\Connectors\\PredisConnector->connect(Array, Array)
+#1 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(91): Illuminate\\Redis\\RedisManager->resolve('default')
+#2 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\RedisManager->connection()
 #3 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('set', Array)
 #4 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('set', Array)
 #5 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -350,9 +369,12 @@
 [stacktrace]
 #0 E:\\php\\jframework\\vendor\\predis\\predis\\src\\Client.php(323): Predis\\Profile\\RedisProfile->createCommand('GETHOST', Array)
 #1 E:\\php\\jframework\\vendor\\predis\\predis\\src\\Client.php(314): Predis\\Client->createCommand('getHost', Array)
-#2 E:\\php\\jframework\\vendor\\illuminate\edis\\Connections\\Connection.php(116): Predis\\Client->__call('getHost', Array)
-#3 E:\\php\\jframework\\vendor\\illuminate\edis\\Connections\\Connection.php(220): Illuminate\\Redis\\Connections\\Connection->command('getHost', Array)
-#4 E:\\php\\jframework\\vendor\\illuminate\edis\\RedisManager.php(277): Illuminate\\Redis\\Connections\\Connection->__call('getHost', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\
+edis\\Connections\\Connection.php(116): Predis\\Client->__call('getHost', Array)
+#3 E:\\php\\jframework\\vendor\\illuminate\
+edis\\Connections\\Connection.php(220): Illuminate\\Redis\\Connections\\Connection->command('getHost', Array)
+#4 E:\\php\\jframework\\vendor\\illuminate\
+edis\\RedisManager.php(277): Illuminate\\Redis\\Connections\\Connection->__call('getHost', Array)
 #5 E:\\php\\jframework\\vendor\\illuminate\\support\\Facades\\Facade.php(260): Illuminate\\Redis\\RedisManager->__call('getHost', Array)
 #6 E:\\php\\jframework\\app\\Controllers\\HomeController.php(61): Illuminate\\Support\\Facades\\Facade::__callStatic('getHost', Array)
 #7 E:\\php\\jframework\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Controllers\\HomeController->test_redis()
@@ -373,7 +395,7 @@
 #22 {main}
 "} 
 [2022-01-22 12:40:15] local.ERROR: Target class [App\Console\Kernel] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Console\\Kernel] does not exist. at E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php:879)
-[stacktrace]
+[stacktrace]JFramework
 #0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
 #1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
 #2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
@@ -433,7 +455,7 @@
 [stacktrace]
 #0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
 #1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
-#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\ContaJFramework: Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
 #3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
 #5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
@@ -580,7 +602,7 @@
 [stacktrace]
 #0 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(886): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
 #1 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
-#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
+#2 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)JFrameworkJFramework
 #3 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(1031): Laravel\\Lumen\\Application->make('Illuminate\\\\Cont...')
 #5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(951): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
@@ -866,7 +888,7 @@
 #21 E:\\php\\jframework\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
 #22 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(1005): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #23 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#24 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 E:\\php\\jframework\\vendor\\symfony\\JFrameworkication.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #25 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 E:\\php\\jframework\\jframework\\Lumen\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #27 E:\\php\\jframework\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
@@ -896,7 +918,7 @@
 #3 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(921): ReflectionClass->newInstanceArgs(Array)
 #4 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Console\\\\Ker...')
 #5 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(296): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Ker...', Array, false)
-#6 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#6 E:\\php\\jframework\\vendor\\illuminate\\container\\ContaJFramework: Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Laravel\\Lumen\\Application), Array)
 #7 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
 #8 E:\\php\\jframework\\vendor\\illuminate\\container\\Container.php(694): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array)
 #9 E:\\php\\jframework\\jframework\\Lumen\\Application.php(284): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
@@ -914,7 +936,7 @@
 #6 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(JFramework\\Console\\Commands\\EventGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #7 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #8 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#9 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\php\\jframework\\jframework\\JFramework\\Console\\KerJFrameworkIlluminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #10 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #11 {main}
 "} 
@@ -933,7 +955,7 @@
 #10 E:\\php\\jframework\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #11 E:\\php\\jframework\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #12 E:\\php\\jframework\\jframework\\JFramework\\Console\\Kernel.php(99): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#13 E:\\php\\jframework\\artisan(35): JFramework\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 E:\\php\\jframework\\artisan(35): JFraJFrameworkle\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #14 {main}
 "} 
 [2022-01-22 14:03:35] local.ERROR: Call to undefined method Laravel\Lumen\Application::getProviders() {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Application::getProviders() at E:\\php\\jframework\\jframework\\JFramework\\Console\\Commands\\EventListCommand.php:50)
