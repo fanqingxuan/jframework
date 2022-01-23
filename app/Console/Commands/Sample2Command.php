@@ -2,24 +2,25 @@
 
 namespace App\Console\Commands;
 
-use App\Models\User;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
+use JFramework\Facades\Redis;
 
-class HelloCommand extends Command
+class Sample2Command extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'hello:test1';
+    protected $signature = 'sample:hello1';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'command dddd';
+    protected $description = 'Command description';
 
     /**
      * Create a new command instance.
@@ -38,6 +39,7 @@ class HelloCommand extends Command
      */
     public function handle()
     {
-        p(User::all());
+        Redis::mset(['aa'=>11,'bb'=>222]);
+        dd(Redis::mget(['aa','bb']),Redis::type('aa'),Redis::dump(),Redis::lIndex());
     }
 }

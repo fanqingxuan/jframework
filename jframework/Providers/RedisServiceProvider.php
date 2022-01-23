@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace JFramework\Providers;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Redis\RedisManager;

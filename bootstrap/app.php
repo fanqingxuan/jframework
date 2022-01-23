@@ -1,7 +1,7 @@
 <?php
 
 use App\Providers\EventServiceProvider;
-use App\Providers\RedisServiceProvider;
+use JFramework\Providers\RedisServiceProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
 

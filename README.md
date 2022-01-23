@@ -6,11 +6,11 @@
 - 容器
 - 事件(Event/Listener)
 - 服务提供者
-- DB、Log、Config、Storage、Redis门面，由于砍掉了一些非必要功能，所以不是所有门面可用，比如Queue、Hash、Auth等
+- 推荐只使用DB、Log、Redis、Storage门面，由于砍掉了一些非必要功能，所以不是所有门面可用，比如Queue、Hash、Auth等
 - env配置
 - 中间件
 - Eloquent ORM
 - request、response使用
-- 命令行
+- 命令行,引入了Laravel中的一些比较使用的命令行，并且支持自定义命令行Console
 
 不包含其他辅助性功能，如果需要，需要使用者自己引入，或者实现，项目目标是最少集成，实现轻量级开发
