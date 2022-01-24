@@ -40,6 +40,6 @@ class Sample2Command extends Command
     public function handle()
     {
         Redis::mset(['aa'=>11,'bb'=>222]);
-        dd(Redis::mget(['aa','bb']),Redis::type('aa'),Redis::dump(),Redis::lIndex());
+        dd(Redis::incrByFloat("num",1));
     }
 }
