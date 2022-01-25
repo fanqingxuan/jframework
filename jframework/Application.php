@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationServiceProvider;
+use JFramework\Cache\CacheManager;
 use JFramework\Console\ConsoleServiceProvider;
 use JFramework\Routing\Router;
 use JFramework\Routing\UrlGenerator;
@@ -755,7 +756,7 @@ class Application extends Container
     public function prepareForConsoleCommand($aliases = true)
     {
         $this->withFacades($aliases);
-
+        
         $this->configure('database');
 
         $this->register(MigrationServiceProvider::class);
@@ -856,7 +857,21 @@ class Application extends Container
         $this->aliases = [
             'log' => \Psr\Log\LoggerInterface::class,
             'request' => \Illuminate\Http\Request::class,
+            \Illuminate\Contracts\Cache\Factory::class => 'cache',
+            \Illuminate\Contracts\Events\Dispatcher::class => 'events',
         ];
+    }
+
+    /**
+     * Register container bindings for the application.
+     *
+     * @return void
+     */
+    protected function registerCacheBindings()
+    {
+        $this->app->singleton('cache', function ($app) {
+            return new CacheManager($app);
+        });
     }
 
     /**
@@ -877,6 +892,9 @@ class Application extends Container
         \Illuminate\Contracts\Filesystem\Cloud::class => 'registerFilesystemBindings',
         \Illuminate\Contracts\Filesystem\Filesystem::class => 'registerFilesystemBindings',
         \Illuminate\Contracts\Filesystem\Factory::class => 'registerFilesystemBindings',
+
+        \Illuminate\Contracts\Cache\Factory::class => 'registerCacheBindings',
+        'cache' => 'registerCacheBindings',
 
         'files' => 'registerFilesBindings',
 

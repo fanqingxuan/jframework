@@ -3,6 +3,8 @@
 namespace JFramework\Console;
 
 use Illuminate\Console\Application as Artisan;
+use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Console\Scheduling\ScheduleRunCommand;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\Kernel as KernelContract;
 use Illuminate\Contracts\Debug\ExceptionHandler;
@@ -61,6 +63,7 @@ class Kernel implements KernelContract
         }
 
         $this->app->prepareForConsoleCommand($this->aliases);
+        $this->defineConsoleSchedule();
     }
 
     /**
@@ -92,6 +95,20 @@ class Kernel implements KernelContract
             [],
             $server
         ));
+    }
+
+    /**
+     * Define the application's command schedule.
+     *
+     * @return void
+     */
+    protected function defineConsoleSchedule()
+    {
+        $this->app->instance(
+            Schedule::class, $schedule = new Schedule
+        );
+
+        $this->schedule($schedule);
     }
 
     /**
@@ -134,6 +151,17 @@ class Kernel implements KernelContract
      * @return void
      */
     public function terminate($input, $status)
+    {
+        //
+    }
+
+    /**
+     * Define the application's command schedule.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    protected function schedule(Schedule $schedule)
     {
         //
     }
@@ -205,7 +233,9 @@ class Kernel implements KernelContract
      */
     protected function getCommands()
     {
-        return $this->commands;
+        return array_merge($this->commands, [
+            ScheduleRunCommand::class,
+        ]);
     }
 
     /**

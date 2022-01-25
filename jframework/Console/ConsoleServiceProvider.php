@@ -2,6 +2,8 @@
 
 namespace JFramework\Console;
 
+use Illuminate\Console\Scheduling\ScheduleFinishCommand;
+use Illuminate\Console\Scheduling\ScheduleRunCommand;
 use Illuminate\Database\Console\DumpCommand;
 use Illuminate\Database\Console\Migrations\FreshCommand as MigrateFreshCommand;
 use Illuminate\Database\Console\Migrations\InstallCommand as MigrateInstallCommand;
@@ -30,14 +32,16 @@ class ConsoleServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        'Migrate' => 'command.migrate',
-        'MigrateInstall' => 'command.migrate.install',
-        'MigrateFresh' => 'command.migrate.fresh',
-        'MigrateRefresh' => 'command.migrate.refresh',
-        'MigrateReset' => 'command.migrate.reset',
+        'Migrate'         => 'command.migrate',
+        'MigrateInstall'  => 'command.migrate.install',
+        'MigrateFresh'    => 'command.migrate.fresh',
+        'MigrateRefresh'  => 'command.migrate.refresh',
+        'MigrateReset'    => 'command.migrate.reset',
         'MigrateRollback' => 'command.migrate.rollback',
-        'MigrateStatus' => 'command.migrate.status',
-        'SchemaDump' => 'command.schema.dump',
+        'MigrateStatus'   => 'command.migrate.status',
+        'SchemaDump'      => 'command.schema.dump',
+        'ScheduleFinish'  => ScheduleFinishCommand::class,
+        'ScheduleRun'     => ScheduleRunCommand::class,
     ];
 
     /**
@@ -187,6 +191,26 @@ class ConsoleServiceProvider extends ServiceProvider
         $this->app->singleton('command.migrate.status', function ($app) {
             return new MigrateStatusCommand($app['migrator']);
         });
+    }
+
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerScheduleFinishCommand()
+    {
+        $this->app->singleton(ScheduleFinishCommand::class);
+    }
+
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerScheduleRunCommand()
+    {
+        $this->app->singleton(ScheduleRunCommand::class);
     }
 
 

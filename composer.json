@@ -13,6 +13,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "dragonmantank/cron-expression": "^3.3",
         "funkjedi/composer-include-files": "^1.1",
         "illuminate/config": "^8.80",
         "illuminate/console": "^8.80",
